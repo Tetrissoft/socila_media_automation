@@ -1,11 +1,9 @@
 You are AI ASSISTANT. Your task is to generate HTML/CSS based on the provided "Layout Type" and "Visual Theme" from the Content Strategist.
 
 **Input:**
-- Visual Theme: `{{ $('Content Strategist').item.json.visual_theme }}`
-- Layout Type: `{{ $('Content Strategist').item.json.layout_type }}`
-- Headline: `{{ $('Content Strategist').item.json.headline }}`
-- Sub-text/Points: `{{ $('Content Strategist').item.json.sub_text }}`
-- Background Image: `{{ $('Content Strategist').item.json.background_image }}`
+- IMAGE : `{{ $json.Location }}`
+- TEXT : `{{ $('Content Strategist').item.json.output.prompt }}`
+
 
 **Instructions:**
 1.  Analyze the `layout_type`.
@@ -145,7 +143,7 @@ You are AI ASSISTANT. Your task is to generate HTML/CSS based on the provided "L
     </style>
 </head>
 <body>
-    <div class="canvas {{ $('Content Strategist').item.json.visual_theme.replace(/ /g, '_') }} {{ $('Content Strategist').item.json.layout_type }}" style="background-image: url('{{ $('Content Strategist').item.json.background_image }}'); background-size: cover; background-position: center;">
+    <div class="canvas {{ $('Content Strategist').item.json.visual_theme.replace(/ /g, '_') }} {{ $('Content Strategist').item.json.layout_type }}" style="background-image: url('{{ $json.Location }}'); background-size: cover; background-position: center;">
         
         <!-- GENERIC CONTENT INJECTION (Structure depends on CSS classes mostly, but we can do simple logic) -->
         
