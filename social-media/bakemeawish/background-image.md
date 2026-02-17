@@ -25,9 +25,12 @@ Generate a high-quality, authentic background image that:
 
 ## Canvas & Format
 
-- **Aspect Ratio**: Strict vertical **9:16** (Instagram/Story format)
+- **Aspect Ratio**: Strict vertical **9:16** (Instagram Story format)
+- **Resolution**: 1080×1920px (or higher quality equivalent)
+- **Safe Zone**: Keep important visual elements away from top 120px and bottom 120px
+  - These areas will be covered by Instagram's UI (profile info, interaction buttons)
+  - Background can extend to full canvas, but key subjects should be in safe zone
 - **Aesthetic**: User-Generated Content (UGC) style - authentic, raw, high-quality
-- **Resolution**: High enough for social media (1080×1920px equivalent)
 
 ## Visual Style Guidelines
 

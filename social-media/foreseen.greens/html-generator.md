@@ -46,8 +46,11 @@ You will receive:
 - Use for: Villain reveals, comparisons, bold statements
 
 #### Layout Constraints
-- Canvas: **1080px × 1350px** (Instagram Portrait)
-- Always include branding: "FORESEEN GREENS" at top or bottom
+- Canvas: **1080px × 1920px** (Instagram Story - 9:16 aspect ratio)
+- **Safe Zone**: Keep critical content within 1080px × 1680px area (120px margin from top/bottom)
+  - Instagram UI overlays appear at top (profile info) and bottom (interaction buttons)
+  - Important text, logos, and CTAs must stay within safe zone
+- Always include branding: "FORESEEN GREENS" positioned safely (not too close to edges)
 - Use the provided `IMAGE` as the background (adjust overlay/opacity as needed for text readability)
 
 ## Your Task
@@ -101,7 +104,7 @@ You will receive:
         }
         .canvas {
             width: 1080px;
-            height: 1350px;
+            height: 1920px;
             position: relative;
             overflow: hidden;
             background-image: url('[IMAGE_URL]');
