@@ -23,11 +23,22 @@ Generate a high-quality, authentic background image that:
 3. **Supports text overlay** - the HTML generator will add content on top
 4. **Feels premium and authentic** - NOT stock photography
 
-## Canvas & Format
+## Canvas & Format - Smart Adaptive Design
 
-- **Aspect Ratio**: Strict vertical **9:16** (Instagram/Story format)
-- **Aesthetic**: User-Generated Content (UGC) style - authentic, raw, high-quality
-- **Resolution**: High enough for social media (1080×1920px equivalent)
+- **Aspect Ratio**: Strict vertical **9:16** (Instagram Story format)
+- **Resolution**: 1080×1920px (or higher quality equivalent)
+- **Three-Zone System for Stories/Feed Compatibility:**
+  - **Top Decorative Zone** (0-285px): Decorative elements only
+  - **Safe Zone** (285-1635px): Main subject should be centered here (1350px height)
+  - **Bottom Decorative Zone** (1635-1920px): Decorative elements only
+
+**Why this matters:**
+- **Stories**: Full 1920px image displays beautifully
+- **Feed Posts**: Instagram auto-crops to center 1350px (Safe Zone)
+- Keep your main subject (cakes, desserts, key ingredients) positioned in the Safe Zone
+- Background elements can extend to full canvas for visual richness
+
+**Aesthetic**: User-Generated Content (UGC) style - authentic, raw, high-quality
 
 ## Visual Style Guidelines
 

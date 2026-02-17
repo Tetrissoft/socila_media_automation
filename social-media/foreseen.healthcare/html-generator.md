@@ -45,9 +45,27 @@ You will receive:
 - Accent: `#FFB74D` (Light Orange)
 - Use for: Wellness tips, encouragement, positive health messaging
 
-#### Layout Constraints
-- Canvas: **1080px × 1350px** (Instagram Portrait)
-- Always include branding: "FORESEEN HEALTHCARE" at top or bottom
+#### Layout Constraints - Smart Adaptive Design
+- Canvas: **1080px × 1920px** (Instagram Story format - works for both Stories and Feed)
+- **Three-Zone Layout System:**
+  - **Top Decorative Zone** (0-285px): Background/decorative elements only, NO text/logos
+  - **Safe Zone** (285-1635px): ALL critical content must be here (1350px height)
+  - **Bottom Decorative Zone** (1635-1920px): Background/decorative elements only, NO text/logos
+
+**Why this works:**
+- **Stories**: Full 1920px canvas displays beautifully
+- **Feed Posts**: Instagram auto-crops to center 1350px (Safe Zone), all content visible
+- **One design, two perfect outputs**
+
+**Content Placement Rules:**
+- **Headline**: Position between 400-800px from top (within Safe Zone)
+- **Body Text/Content**: Position between 800-1400px from top (within Safe Zone)
+- **Branding**: Position between 1450-1600px from top (within Safe Zone)
+- **Background Images**: Can extend full 1920px height
+- **Decorative Elements**: Can use full canvas, but no critical info in dead zones
+
+**CRITICAL:** Never place text, logos, CTAs, or important visual elements in top 285px or bottom 285px - they will be cropped on Feed posts!
+
 - Use the provided `IMAGE` as the background (adjust overlay/opacity as needed for text readability)
 
 ## Your Task
@@ -101,7 +119,7 @@ You will receive:
         }
         .canvas {
             width: 1080px;
-            height: 1350px;
+            height: 1920px;
             position: relative;
             overflow: hidden;
             background-image: url('[IMAGE_URL]');
@@ -109,6 +127,10 @@ You will receive:
             background-position: center;
             /* Add your creative styling here */
         }
+        /* SAFE ZONE: Keep all text/logos between 285px and 1635px from top */
+        /* Top Dead Zone: 0-285px (decorative only) */
+        /* Safe Zone: 285-1635px (all critical content) */
+        /* Bottom Dead Zone: 1635-1920px (decorative only) */
         /* Add layout-specific styles */
     </style>
 </head>
