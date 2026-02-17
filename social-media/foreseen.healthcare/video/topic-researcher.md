@@ -113,28 +113,50 @@ Return **ONE** video topic as a 3-5 word phrase:
 
 ## Topic Selection Rules
 
-1. **Visual Proof**: Must show something visible in 8 seconds
-2. **One Focus**: Single health fact or technique
-3. **Actionable**: Viewer can apply immediately
-4. **Science-Backed**: Trustworthy information
-5. **Brand Aligned**: Educational, empowering, supportive
-6. **Trend Aware**: Consider current health concerns
+1. **Transformation/Demonstration Required**: Must show clear proof, technique, or comparison
+2. **Value-Driven**: Viewer must learn actionable health information
+3. **Action-Based**: Active demonstration, not static information
+4. **Story Arc**: Clear setup, demonstration, and educational payoff
+5. **Science-Backed**: Trustworthy information only
+6. **Brand Aligned**: Educational, empowering, supportive
+7. **Trend Aware**: Consider current health concerns
+
+### ❌ AVOID These Topic Types:
+- **Vague Health Claims**: "Healthy living tips" (too broad, no specific action)
+- **Static Information**: "Health facts on screen" (no demonstration)
+- **No Demonstration**: "Talking about health" (show, don't tell)
+- **No Payoff**: Information without visual proof or technique
+- **Fear Without Solution**: Warning without actionable insight
 
 ---
 
 ## What Makes a Great 8-Second Health Video Topic
 
-✅ **Visual Evidence**: Shows proof, not just tells
-✅ **Clear Action**: One specific demonstration
-✅ **Immediate Value**: Viewer learns something useful
-✅ **No Jargon**: Accessible to everyone
-✅ **Shareable**: "Everyone needs to know this" factor
+✅ **MUST HAVE**:
+- **Visual Proof**: "Reading label → Finding hidden sugars"
+- **Technique Demonstration**: "Posture check in 5 seconds"
+- **Comparison Value**: "Myth vs science side-by-side"
+- **Warning with Evidence**: "Water test revealing microplastics"
+- **Educational Value**: Viewer learns actionable health insight
 
-❌ **Avoid**:
-- Complex medical explanations
-- Topics requiring context
-- Multi-step processes
-- Fear-mongering without solutions
+✅ **Good Topic Examples**:
+- "Hidden sugars label reading" (demonstration + educational)
+- "Posture check technique" (actionable + visual)
+- "Microplastic water test" (proof + warning + value)
+- "Dehydration warning signs" (educational + self-check)
+
+❌ **BAD Topic Examples** (and why):
+- ❌ "Health tips" → Too vague, no specific demonstration
+- ❌ "Wellness information" → Static, no visual proof
+- ❌ "Being healthy" → No action, no technique, no value
+- ❌ "Health facts" → Tell don't show, no demonstration
+- ❌ "Medical advice" → Too broad, no specific actionable insight
+
+❌ **Never Generate**:
+- Vague health topics without specific demonstration
+- Static information without visual proof
+- Topics requiring medical context or disclaimers
+- Fear-mongering without actionable solutions
 
 ---
 

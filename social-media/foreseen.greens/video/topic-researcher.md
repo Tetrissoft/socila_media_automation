@@ -113,28 +113,50 @@ Return **ONE** video topic as a 3-5 word phrase:
 
 ## Topic Selection Rules
 
-1. **Visual Impact**: Must be visually stunning in 8 seconds
-2. **One Focus**: Single action or moment
-3. **Freshness First**: Showcase vitality and vibrancy
-4. **Satisfying**: Should have a satisfying visual payoff
+1. **Transformation Required**: Must show clear before/after or process with payoff
+2. **Value-Driven**: Viewer must learn something or see freshness/nutrition benefit
+3. **Action-Based**: Active process (harvesting, growing, comparing), not static beauty shots
+4. **Story Arc**: Clear beginning, action, and satisfying conclusion
 5. **Brand Aligned**: Fresh, energetic, nutrient-focused
 6. **Trend Aware**: Consider current health/food trends
+7. **Freshness First**: Showcase vitality and vibrancy through action
+
+### ❌ AVOID These Topic Types:
+- **Purely Decorative**: "Water drops on leaves" (no purpose or story)
+- **Static Beauty Shots**: "Close-up of greens" (no action or transformation)
+- **Vague Actions**: "Doing something with microgreens" (unclear value)
+- **No Payoff**: Actions without visible result or benefit
+- **No Context**: Random aesthetic moments without story
 
 ---
 
 ## What Makes a Great 8-Second Video Topic
 
-✅ **Vibrant Colors**: Deep greens, bright whites, natural tones
-✅ **Clear Action**: One specific, visible action
-✅ **Visual Payoff**: Satisfying end result
-✅ **No Dialogue Needed**: Purely visual storytelling
-✅ **Shareable**: "This is so fresh!" factor
+✅ **MUST HAVE**:
+- **Clear Transformation**: "Seed → Grown microgreen" or "Cutting → Fresh harvest"
+- **Action with Purpose**: "Harvesting fresh greens" (shows freshness process)
+- **Comparison Value**: "Microgreen vs wilted lettuce" (demonstrates benefit)
+- **Growth Story**: "24-hour time-lapse" (shows vitality)
+- **Educational Value**: Viewer sees freshness, nutrition, or farm-to-table process
 
-❌ **Avoid**:
-- Complex multi-step processes
-- Topics requiring explanation
-- Slow-growing actions (unless time-lapse)
-- Unclear visual focus
+✅ **Good Topic Examples**:
+- "Harvesting fresh microgreens" (action + freshness demonstration)
+- "Microgreen growth time-lapse" (transformation + vitality)
+- "Fresh vs store-bought comparison" (value demonstration)
+- "Root system reveal" (educational + freshness proof)
+
+❌ **BAD Topic Examples** (and why):
+- ❌ "Water drops on microgreens" → No purpose, no transformation, just aesthetic
+- ❌ "Close-up of green leaves" → Static shot, no action, no value
+- ❌ "Microgreens on table" → No story, no action, no payoff
+- ❌ "Pretty greens" → Too vague, aesthetic only
+- ❌ "Leaf details" → No demonstration of freshness or benefit
+
+❌ **Never Generate**:
+- Purely decorative actions without purpose
+- Static beauty shots without transformation
+- Vague or unclear actions
+- Topics with no educational or freshness value
 
 ---
 

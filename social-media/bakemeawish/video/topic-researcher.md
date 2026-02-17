@@ -114,28 +114,50 @@ Return **ONE** video topic as a 3-5 word phrase:
 
 ## Topic Selection Rules
 
-1. **Visual First**: Must be visually stunning in 8 seconds
-2. **One Focus**: Single action or moment (no complex sequences)
-3. **Satisfying**: Should have a satisfying visual payoff
-4. **Brand Aligned**: Premium, artisanal, celebratory
-5. **Trend Aware**: Consider current viral video trends
-6. **Seasonal**: Align with current season when relevant
+1. **Transformation Required**: Must show clear before/after or process with payoff
+2. **Value-Driven**: Viewer must learn something or see skill demonstrated
+3. **Action-Based**: Active process, not static beauty shots
+4. **Story Arc**: Clear beginning, action, and satisfying conclusion
+5. **Brand Aligned**: Premium, artisanal, celebratory
+6. **Trend Aware**: Consider current viral video trends
+7. **Seasonal**: Align with current season when relevant
+
+### ❌ AVOID These Topic Types:
+- **Purely Decorative**: "Sprinkling powder on cake" (no purpose)
+- **Static Beauty Shots**: "Water drops on surface" (no action)
+- **Vague Actions**: "Doing something to cake" (unclear value)
+- **No Payoff**: Actions without visible result
+- **No Context**: Random aesthetic moments without story
 
 ---
 
 ## What Makes a Great 8-Second Video Topic
 
-✅ **Clear Action**: One specific, visible action
-✅ **Visual Payoff**: Satisfying end result
-✅ **No Dialogue Needed**: Purely visual storytelling
-✅ **Repeatable**: Viewers want to watch multiple times
-✅ **Shareable**: "You have to see this" factor
+✅ **MUST HAVE**:
+- **Clear Transformation**: "Plain cake → Decorated cake"
+- **Skill Demonstration**: "Piping perfect rosettes"
+- **Process with Payoff**: "Frosting spread → Smooth finish"
+- **Reveal Moment**: "Cutting cake → Layer reveal"
+- **Educational Value**: Viewer learns technique or sees craftsmanship
 
-❌ **Avoid**:
-- Complex multi-step processes
-- Topics requiring explanation
-- Slow-moving actions
-- Unclear visual focus
+✅ **Good Topic Examples**:
+- "Piping rosettes onto cake" (skill + transformation)
+- "Cake slice layer reveal" (anticipation + payoff)
+- "Smoothing ganache finish" (process + satisfying result)
+- "Gold leaf application" (technique + premium reveal)
+
+❌ **BAD Topic Examples** (and why):
+- ❌ "Sprinkling powder on cake" → No purpose, no transformation, just decoration
+- ❌ "Close-up of frosting" → Static shot, no action, no value
+- ❌ "Cake on table" → No story, no action, no payoff
+- ❌ "Decorating something" → Too vague, unclear value
+- ❌ "Pretty cake details" → Aesthetic only, no demonstration
+
+❌ **Never Generate**:
+- Purely decorative actions without purpose
+- Static beauty shots without transformation
+- Vague or unclear actions
+- Topics with no educational or entertainment value
 
 ---
 
