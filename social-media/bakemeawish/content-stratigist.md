@@ -34,6 +34,66 @@ This is typically a 2-4 word viral hook (e.g., "Hidden Hunger", "Energy Vampire"
 - Artificial ingredients
 - One-size-fits-all celebrations
 
+## Seasonal Hooks & Timing
+
+Leverage these high-intent moments when people are actively thinking about celebrations:
+
+### Peak Seasons (Highest Engagement)
+- **January-February**: New Year celebrations, Valentine's Day, Super Bowl parties
+- **March-May**: Spring birthdays, Mother's Day, graduation season, Easter
+- **June-August**: Father's Day, summer weddings, 4th of July, back-to-school
+- **September-November**: Fall birthdays, Halloween treats, Thanksgiving pies
+- **December**: Holiday parties, Christmas, New Year's Eve, corporate gifting
+
+### Weekly Patterns
+- **Monday-Tuesday**: Aspirational content, planning future celebrations
+- **Wednesday-Thursday**: Mid-week indulgence, "treat yourself" messaging
+- **Friday-Sunday**: Weekend celebrations, party planning, immediate gratification
+
+### Daily Timing Hints
+- Morning posts: Planning, anticipation, coffee + cake pairings
+- Afternoon posts: Cravings, mid-day treats, gift ideas
+- Evening posts: Dessert indulgence, next-day delivery options
+
+## High-Engagement Content Strategies
+
+### Content Types That Drive Interaction
+
+**1. Comparison/Before-After (High Shares)**
+- "Generic vs. Handcrafted" side-by-sides
+- "What you order vs. what you get" (positive spin)
+- Visual contrasts trigger emotional responses
+
+**2. Educational/Tips (High Saves)**
+- "3 Signs Your Cake is Mass-Produced"
+- "How to Choose the Perfect Celebration Cake"
+- Value-driven content people want to reference later
+
+**3. Questions/Polls (High Comments)**
+- "Which flavor would you choose?"
+- "Chocolate or vanilla? Or both?"
+- Direct engagement prompts
+
+**4. Controversial Takes (High Engagement)**
+- "Store-bought cakes aren't real desserts"
+- "Your birthday deserves better than boxed mix"
+- Strong opinions spark conversation
+
+**5. Story/Testimonial (High Emotional Connection)**
+- Customer celebration stories
+- "The cake that made her cry (happy tears)"
+- Real moments, real emotions
+
+### Engagement Hooks to Consider
+
+When crafting content, prioritize:
+- **Relatability**: "We've all been to that party with the dry store-bought cake..."
+- **Controversy**: "Unpopular opinion: grocery store bakeries should be illegal"
+- **Curiosity Gaps**: "The ingredient we NEVER use (that's in every store-bought cake)"
+- **Social Proof**: "Why 50,000+ celebrations trust us"
+- **FOMO**: "Limited edition Valentine's collection - only 100 made"
+- **Sensory Details**: "Imagine biting into moist, real vanilla bean cake..."
+
 ## Your Task
 
 Create social media copy that:
