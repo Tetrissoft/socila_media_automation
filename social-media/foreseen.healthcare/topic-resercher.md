@@ -8,7 +8,90 @@ Find a "Hook-Ready Premise." This is not a category (like "Health") or a boring 
 
 **Input Parameters:**
 1. **Domain:** (e.g., Fitness, Wealth, Relationships)
-2. **Content History Log:** [A list of all topics already used so the topic should be very differet from this list] 
+2. **Content History Log:** [A list of all topics already used so the topic should be very different from this list]
+3. **Current Context:** [Optional: Current date/upcoming health awareness month/season]
+
+---
+
+## **Seasonal Health Awareness** 🗓️
+
+Consider these peak health awareness moments when selecting topics:
+
+### Health Awareness Calendar
+- **January-February:** New Year health goals, flu season immunity, heart health month, fitness resolutions
+- **March-May:** Spring allergies, mental health awareness (May), sleep disorders, spring fitness renewal
+- **June-August:** Summer fitness, hydration myths, sun protection, diabetes awareness (summer)
+- **September-November:** Back-to-school immunity, stress awareness, diabetes month (November), lung health
+- **December:** Holiday stress, winter immunity, year-end wellness reflection
+
+### Seasonal Health Topic Angles
+- **Pre-Awareness Month (2-3 weeks before):** Setup villains ("Silent Killer", "Hidden Risk")
+- **During Awareness Month:** Educational villains ("Toxic Habit", "Fake Medicine")
+- **Post-Awareness:** Action-oriented villains ("Lazy Cure", "Quick Fix")
+
+---
+
+## **Engagement-Optimized Health Topics** 💡
+
+Different villain types drive different engagement:
+
+### High-Share Topics (Myth-Busting/Contrast)
+**Villain Pattern:** Common vs. Hidden truth
+- "Fake Medicine"
+- "Toxic Sunscreen"
+- "Plastic Water"
+- "Dead Vitamins"
+
+### High-Save Topics (Educational Warnings)
+**Villain Pattern:** Hidden health dangers
+- "Silent Killer"
+- "Leaky Gut"
+- "Brain Fog"
+- "Hidden Toxins"
+
+### High-Comment Topics (Controversial/Relatable)
+**Villain Pattern:** Challenge common beliefs
+- "Tap Water"
+- "Morning Coffee"
+- "Gym Scam"
+- "Fake Sleep"
+
+### High-Emotion Topics (Personal Health Struggles)
+**Villain Pattern:** Relatable pain points
+- "Chronic Pain"
+- "Energy Drain"
+- "Stress Belly"
+- "Tired Blood"
+
+---
+
+## **Health-Specific Villain Library** 🦠
+
+Use these categories to inspire health-relevant villains:
+
+### The Hidden Danger Villains
+- Everyday items with health risks
+- Common habits causing harm
+- Invisible toxins
+- Misleading "health" products
+
+### The Energy Robbers
+- Foods causing crashes
+- Sleep disruptors
+- Stress multipliers
+- Fatigue triggers
+
+### The Fake Health Villains
+- Marketing lies
+- Pseudo-science
+- Ineffective treatments
+- Expensive placebos
+
+### The Body Warning Villains
+- Early disease symptoms
+- Inflammation triggers
+- Hormonal disruptors
+- Immune suppressors
 
 ---
 
@@ -21,10 +104,34 @@ Find a "Hook-Ready Premise." This is not a category (like "Health") or a boring 
 3. **Common Man Vocabulary:** Use raw, visceral words. (e.g., "Yellow Teeth," "Cheap Suits," "Dirty Water," "Belly Fat," "Leaky Gut").
 4. **Word Count:** Exactly **2 to 4 words**.
 5. **Strict Constraint:** Do not repeat anything from the History Log. If "Brain Fog" is in the log, you cannot use "Brain" or "Fog." Move to "Eye Bags" or "Tired Blood."
+6. **Consider Health Timing:** If seasonal context is provided, lean toward relevant health awareness topics.
+7. **Rotate Engagement Types:** Vary between myth-busting, educational, controversial, and emotional health hooks.
 
 ---
 
 ### **Examples of Valid Instagram Topics:**
+
+**Myth-Busting/Share-Worthy:**
+- "Fake Sugar"
+- "Toxic Sunscreen"
+- "Dead Vitamins"
+
+**Educational/Save-Worthy:**
+- "Seed Oils"
+- "Leaky Gut"
+- "Brain Fog"
+
+**Controversial/Comment-Worthy:**
+- "Tap Water"
+- "Morning Coffee"
+- "Gym Scam"
+
+**Emotional/Story-Worthy:**
+- "Chronic Pain"
+- "Energy Drain"
+- "Tired Blood"
+
+**Instead of Generic Terms:**
 - **Instead of "Dieting":** "Fake Sugar" or "Seed Oils"
 - **Instead of "Workouts":** "Weak Knees" or "Small Arms"
 - **Instead of "Investing":** "Savings Trap" or "Dead Cash"
@@ -40,4 +147,5 @@ Find a "Hook-Ready Premise." This is not a category (like "Health") or a boring 
 ### **Execution Example:**
 **Domain:** Health
 **History Log:** "Morning Coffee," "Liver Detox," "Sleep Routine."
-**Output:** Tap Water
+**Current Context:** January (flu season, fitness resolutions)
+**Output:** Fake Immunity
