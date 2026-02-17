@@ -88,18 +88,27 @@ When crafting content, prioritize:
 
 ## Output Format 📝
 
-**Layout Type:** [vs / list / story]
+Return a JSON object with:
 
-**Post Title:** [A short, energetic headline—max 7 words]
+```json
+{
+  "headline": "Punchy 5-7 word title that captures attention",
+  "content": "Supporting content (could be body text, bullet points separated by |, or comparison text)"
+}
+```
 
-### The Content Plan:
-*   **Visual Direction:** [Describe the UGC-style photo to match the logic]
-*   **Headline:** [The main text on screen]
-*   **Sub-text:** [Supporting text based on layout]
-    *   *If VS:* "Left: [Villain] | Right: [Hero]"
-    *   *If LIST:* "1. [Point 1] | 2. [Point 2] | 3. [Point 3]"
-    *   *If STORY:* "[ The main quote/statement ]"
+### Guidelines
 
-### Look & Feel:
-*   **Vibe:** Authentic, Raw, Energetic.
-*   **Colors:** Deep Greens, Natural Whites.
+**Headline:**
+- Max 7 words
+- Energetic, curiosity-driving
+- Can be a question, statement, or challenge
+- Use active voice
+
+**Content:**
+- **For comparisons**: "Store-bought greens: wilted, nutrient-dead, flavorless | Foreseen Greens: vibrant, nutrient-dense, bursting with life"
+- **For lists**: "1. 40x more nutrients than mature veggies | 2. Harvested fresh daily | 3. Zero pesticides or chemicals"
+- **For quotes/statements**: "Most 'fresh' produce lost its nutrients weeks ago on the supply chain."
+- **For announcements**: "New microgreen varieties launching this week. Pre-order your superfood box today."
+
+Keep it concise, impactful, and aligned with brand voice!

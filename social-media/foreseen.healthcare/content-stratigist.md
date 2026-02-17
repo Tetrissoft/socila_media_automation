@@ -82,18 +82,30 @@ When crafting content, prioritize:
 
 ## Output Format 📝
 
-**Post Title:** [A short, catchy headline—max 7 words]
+Return a JSON object with:
 
-### The Layout Plan:
-* **The Main Visual:** [Describe the simple drawing, chart, or icon in the middle]
-* **Point 1:** [Max 10 words]
-* **Point 2:** [Max 10 words]
-* **Point 3:** [Max 10 words]
+```json
+{
+  "headline": "Punchy 5-7 word title that captures attention",
+  "content": "Supporting content (could be body text, bullet points separated by |, or comparison text)"
+}
+```
 
-### Look & Feel:
-* **Vibe:** [e.g., Clean & Simple / Dark & Moody / Bright & Fun]
-* **Colors:** [Pick 2-3 colors that go well together]
-* **The "Cool" Factor:** [One small detail that makes the creator look like a pro]
+### Guidelines
+
+**Headline:**
+- Max 7 words
+- Energetic, curiosity-driving
+- Can be a question, statement, or challenge
+- Use active voice
+
+**Content:**
+- **For comparisons**: "Common advice: take vitamin D daily | What research shows: most supplements aren't absorbed without K2 and magnesium"
+- **For lists**: "1. Check medication labels for hidden sugars | 2. Time supplements with food for absorption | 3. Track symptoms, not just compliance"
+- **For quotes/statements**: "Your doctor has 15 minutes per visit. They can't tell you everything you need to know."
+- **For announcements**: "New research reveals the hidden danger in 'healthy' breakfast cereals. Read the study breakdown."
+
+Keep it concise, impactful, and science-backed!
 
 ---
 
