@@ -46,37 +46,24 @@ flowchart TD
 
 ---
 
-### 2. Content Strategist ("The Celebration Architect")
+### 2. Content Creator ("The Content Creator")
 
-**Purpose**: Transform the topic into structured social media content
+**Purpose**: Create compelling social media copy
 
 **Input**:
 - Topic from Topic Researcher
 
 **Process**:
-- Analyzes the topic to determine content type
-- Selects appropriate visual theme:
-  - **Classic Rustic**: Warm, traditional (ingredients, recipes)
-  - **Modern Pop**: Bold, energetic (sales, fun facts)
-  - **Elegant Luxury**: Premium, sophisticated (gifting, celebrations)
-- Chooses layout structure:
-  - **Comparison**: VS Split, VS Diagonal, VS Cards
-  - **Lists**: Bullets, Timeline, Grid Features
-  - **Showcase**: Hero Full Focus, Product Badge
-  - **Text/Quotes**: Quote Block, Typography
-  - **Engagement**: Poll, This-or-That, Trivia
-  - **Announcements**: Breaking News, Event Ticket
+- Interprets the topic in the context of gourmet bakery/celebrations
+- Positions the problem ("villain") and solution ("hero")
+- Creates engaging copy aligned with Bake Me A Wish brand voice
+- Structures content appropriately (comparison, list, quote, etc.)
 
 **Output** (JSON):
 ```json
 {
-  "visual_theme": "Classic Rustic | Modern Pop | Elegant Luxury",
-  "layout_category": "Comparison | Lists | Showcase | Text | Engagement | Announcements",
-  "layout_type": "Specific layout name",
-  "headline": "Main punchy title (max 7 words)",
-  "sub_text": "Supporting text/bullet points",
-  "visual_description": "Description of needed background image",
-  "color_palette_hint": "e.g., Pastel Pink & Gold"
+  "headline": "Punchy 5-7 word title",
+  "content": "Supporting content (body text, bullets separated by |, or comparison text)"
 }
 ```
 
@@ -84,22 +71,24 @@ flowchart TD
 
 ---
 
-### 3. Content Director ("The Aesthetic Baker")
+### 3. Content Editor ("The Content Editor")
 
-**Purpose**: Quality assurance and creative optimization
+**Purpose**: Quality assurance for copy
 
 **Input**:
-- Content JSON from Content Strategist
+- Content JSON from Content Creator
 
 **Process**:
-- Evaluates **Theme Match**: Does visual theme fit content vibe?
-- Checks **Layout Fit**: Does text structure match layout type?
-- Assesses **Visual Interest**: Is the visual description specific enough?
+- Evaluates **Brand Voice**: Does it sound like Bake Me A Wish?
+- Checks **Clarity**: Is the message clear and compelling?
+- Assesses **Engagement Potential**: Will this stop scrollers?
+- Reviews **Social Media Fitness**: Optimized for platform?
+- Validates **Brand Positioning**: Differentiates from generic bakeries?
 
 **Output**:
 - **Status**: APPROVED or REJECTED
 - **Critique**: One sentence explanation
-- **Revised JSON**: (only if rejected) - improved version sent back to loop
+- **Revised Content**: (only if rejected) - improved version
 
 **File**: [`content-director.md`](file:///Users/abhinavagarwal/Documents/Developer/prompts-CLassified/social-media/bakemeawish/content-director.md)
 
@@ -141,7 +130,7 @@ flowchart TD
 
 **Input**:
 - **IMAGE**: Background image URL from Background Image Generator
-- **TEXT**: Content description from Content Strategist (approved)
+- **TEXT**: Content from Content Creator (approved by Content Editor)
 
 **Process**:
 - Analyzes TEXT to determine optimal layout approach
@@ -169,8 +158,8 @@ The workflow is typically implemented in n8n with the following node structure:
 
 1. **Trigger**: Manual or scheduled
 2. **AI Agent Node 1**: Topic Researcher
-3. **AI Agent Node 2**: Content Strategist (receives topic)
-4. **AI Agent Node 3**: Content Director (receives content JSON)
+3. **AI Agent Node 2**: Content Creator (receives topic)
+4. **AI Agent Node 3**: Content Editor (receives content JSON)
 5. **If Node**: Check if APPROVED
    - Yes → Continue to node 6
    - No → Loop back to node 2 with revisions
@@ -182,11 +171,11 @@ The workflow is typically implemented in n8n with the following node structure:
 ### Data Flow
 
 ```
-Topic Researcher Output → Content Strategist Input
+Topic Researcher Output → Content Creator Input
                        ↓
-Content Strategist Output → Content Director Input
+Content Creator Output → Content Editor Input
                        ↓
-Content Director Output → {Approve/Reject Decision}
+Content Editor Output → {Approve/Reject Decision}
                        ↓
          Approved → Background Image Generator Input (receives original Topic)
                        ↓
@@ -215,3 +204,8 @@ social-media/bakemeawish/
   - Updated `html-generator.md` to dynamic LLM prompt
   - Enhanced `background-image.md` with detailed guidelines
   - Documented complete pipeline
+- **v2.0** (2026-02-17): Content/Presentation separation
+  - Refactored `content-stratigist.md` to focus purely on copywriting
+  - Refactored `content-director.md` to audit content quality only
+  - HTML Generator now makes all visual/layout decisions
+  - Simplified data flow with cleaner separation of concerns
