@@ -10,6 +10,7 @@ Find a "Hook-Ready Premise." This is not a generic category like "Eating Vegetab
 1. **Domain:** (e.g., Nutrition, Cooking, Energy, Wellness)
 2. **Content History Log:** [A list of all topics already used so the topic should be very different from this list]
 3. **Current Context:** [Optional: Current date/upcoming nutrition awareness period/season]
+4. **Theme:** `<Theme>` - The specific content pillar to focus on (e.g., "Nutrition Tips", "Microgreen Recipes", "Growing at Home", "Gut Health"). This narrows the topic to a specific angle within the domain.
 
 ---
 
@@ -106,6 +107,7 @@ Use these categories to inspire nutrition-relevant villains:
 5. **Strict Constraint:** Do not repeat anything from the History Log.
 6. **Consider Nutrition Timing:** If seasonal context is provided, lean toward relevant nutrition awareness topics.
 7. **Rotate Engagement Types:** Vary between shocking contrast, educational, controversial, and emotional nutrition hooks.
+8. **Theme Focus:** If a `Theme` is provided, the topic MUST be directly relevant to that theme. The villain or hook should emerge from within that theme's context.
 
 ---
 
@@ -148,4 +150,5 @@ Use these categories to inspire nutrition-relevant villains:
 **Domain:** Nutrition
 **History Log:** "Empty Salad," "Fake Fresh."
 **Current Context:** January (New Year detox, clean eating resolutions)
-**Output:** Dead Calories
+**Theme:** Gut Health
+**Output:** Dead Gut Bacteria

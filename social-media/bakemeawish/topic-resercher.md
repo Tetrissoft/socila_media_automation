@@ -10,6 +10,7 @@ Find a "Hook-Ready Premise." This is not a generic category. It is a specific **
 1. **Domain:** Gourmet Bakery
 2. **Content History Log:** [A list of all topics already used]
 3. **Current Context:** [Optional: Current date/upcoming season/celebration]
+4. **Theme:** `<Theme>` - The specific content pillar to focus on (e.g., "Recipes", "Gifting Tips", "Behind the Scenes", "Ingredient Stories"). This narrows the topic to a specific angle within the domain.
 
 ---
 
@@ -104,6 +105,7 @@ Use these categories to inspire bakery-relevant villains:
 5. **Strict Constraint:** Do not repeat anything from the History Log.
 6. **Consider Timing:** If seasonal context is provided, lean toward relevant celebration villains.
 7. **Rotate Engagement Types:** Vary between comparison, educational, controversial, and emotional hooks.
+8. **Theme Focus:** If a `Theme` is provided, the topic MUST be directly relevant to that theme. The villain or hook should emerge from within that theme's context.
 
 ---
 
@@ -133,3 +135,12 @@ Use these categories to inspire bakery-relevant villains:
 
 ### **Final Output Format:**
 [ONLY the 2-4 word topic. No punctuation. No intro.]
+
+---
+
+### **Execution Example with Theme:**
+**Domain:** Gourmet Bakery
+**History Log:** "Hidden Hunger," "Plastic Frosting."
+**Current Context:** February (Valentine's Day)
+**Theme:** Gifting Tips
+**Output:** Lazy Gift Guilt

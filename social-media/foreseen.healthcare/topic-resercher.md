@@ -10,6 +10,7 @@ Find a "Hook-Ready Premise." This is not a category (like "Health") or a boring 
 1. **Domain:** (e.g., Fitness, Wealth, Relationships)
 2. **Content History Log:** [A list of all topics already used so the topic should be very different from this list]
 3. **Current Context:** [Optional: Current date/upcoming health awareness month/season]
+4. **Theme:** `<Theme>` - The specific content pillar to focus on (e.g., "Nutrition Tips", "Mental Health", "Sleep Science", "Myth Busting"). This narrows the topic to a specific angle within the domain.
 
 ---
 
@@ -106,6 +107,7 @@ Use these categories to inspire health-relevant villains:
 5. **Strict Constraint:** Do not repeat anything from the History Log. If "Brain Fog" is in the log, you cannot use "Brain" or "Fog." Move to "Eye Bags" or "Tired Blood."
 6. **Consider Health Timing:** If seasonal context is provided, lean toward relevant health awareness topics.
 7. **Rotate Engagement Types:** Vary between myth-busting, educational, controversial, and emotional health hooks.
+8. **Theme Focus:** If a `Theme` is provided, the topic MUST be directly relevant to that theme. The villain or hook should emerge from within that theme's context.
 
 ---
 
@@ -148,4 +150,5 @@ Use these categories to inspire health-relevant villains:
 **Domain:** Health
 **History Log:** "Morning Coffee," "Liver Detox," "Sleep Routine."
 **Current Context:** January (flu season, fitness resolutions)
-**Output:** Fake Immunity
+**Theme:** Nutrition Tips
+**Output:** Fake Immunity Boost

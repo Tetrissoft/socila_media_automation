@@ -87,7 +87,8 @@ You will receive:
 
 4. **Generate complete HTML** with:
    - Embedded CSS (no external stylesheets)
-   - Responsive to 1080×1350 canvas
+   - Canvas size: **1080px wide × 1920px tall** (full Story format)
+   - ALL text/content must be positioned within the **Safe Zone: 285px–1635px from top**
    - Background image from `IMAGE` input
    - Clean, semantic HTML structure
    - Smooth, professional design
