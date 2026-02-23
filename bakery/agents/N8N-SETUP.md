@@ -1,10 +1,14 @@
 # n8n Workflow Setup Guide — Baker's Club Multi-Agent (Merged)
 
-## Import the Workflow
+## Import the Workflows
 
-1. In n8n, go to **Workflows** → **Import from File** (or **Import from Clipboard**)
-2. Select `n8n-workflow.json` from this folder
+1. **Main flow:** Import `n8n-workflow.json`
+2. **Form workflows:** Import `n8n-setup-form.json` and `n8n-place-order-form.json`
 3. **Prerequisite:** You need the **Get Prompt Form Github** subflow (workflow ID `qZHrvRFBhUhmUHKc`) that fetches prompts by `path`
+
+### Form URL configuration
+
+In the main workflow, edit **Setup Form Link** and **Order Form Link** nodes: replace `YOUR_N8N_INSTANCE.app.n8n.cloud` with your actual n8n base URL (e.g. `yourname.app.n8n.cloud` or your self-hosted URL).
 
 ---
 
@@ -19,11 +23,11 @@ Get Gate Prompt (path: bakery/agents/gate-agent.md)
     ▼
 Gate Agent (GET only) → Parse Route → IF (setup/main)
     │
-    ├── setup  → Get Setup Prompt → Setup Agent → Discord Send
+    ├── setup  → Setup Form Link → Discord (sends form URL)
     │
     └── main   → Pass Context → Main Router → Switch
                       │
-                      ├── order    → Get Order Prompt    → Order Agent    → Discord
+                      ├── order    → Order Form Link → Discord (sends form URL)
                       ├── pricing  → Get Pricing Prompt  → Pricing Agent  → Discord
                       ├── marketing→ Get Marketing Prompt→ Marketing Agent→ Discord
                       ├── customer → Get Customer Prompt→ Customer Agent → Discord
@@ -80,6 +84,12 @@ Update **Send a message**:
 
 - **Details** sheet — columns: Baker Id*, Name*, Business Name*, City*, Phone Number*
 - **Orders** sheet — columns: id, customer_name, item, weight, price, phone_number, address, delivery_date, delivery_time
+
+### 6. Form workflows (Setup Store & Place Order)
+
+- Import and **publish** `n8n-setup-form.json` and `n8n-place-order-form.json`
+- Form URLs (production): `.../form/setup-store?bakerId=...` and `.../form/place-order?bakerId=...`
+- Pass `bakerId` (Discord user ID) as query param so the form pre-fills the hidden field and Discord can DM the user
 
 ---
 

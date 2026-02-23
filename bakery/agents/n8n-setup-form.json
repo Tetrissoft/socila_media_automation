@@ -1,0 +1,72 @@
+{
+  "name": "Baker's Club - Setup Store Form",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Set up your store 🎂",
+        "formDescription": "Fill in your details to join Baker's Club. We'll save them to your profile.",
+        "formPath": "setup-store",
+        "formFields": {
+          "values": [
+            {"fieldLabel": "Name", "fieldName": "Name", "fieldType": "text", "requiredField": true, "placeholder": "Your name"},
+            {"fieldLabel": "Business Name", "fieldName": "Business_Name", "fieldType": "text", "requiredField": true, "placeholder": "Your bakery or business name"},
+            {"fieldLabel": "City", "fieldName": "City", "fieldType": "text", "requiredField": true, "placeholder": "e.g. Mumbai, Delhi"},
+            {"fieldLabel": "Phone Number", "fieldName": "Phone_Number", "fieldType": "text", "requiredField": true, "placeholder": "e.g. 9876543210"},
+            {"fieldLabel": "Baker Id", "fieldName": "bakerId", "fieldType": "hiddenField"}
+          ]
+        },
+        "options": {"respondWith": "formSubmitted"}
+      },
+      "id": "form-trigger",
+      "name": "Setup Store Form",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {"__rl": true, "value": "https://docs.google.com/spreadsheets/d/12ErTLk5wUbn5BlGDy5wYAN9O0mZZOFsh1wSB8iIL_Ho/edit?usp=sharing", "mode": "url"},
+        "sheetName": {"__rl": true, "value": "Details", "mode": "name"},
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "Baker Id*": "={{ $json.bakerId }}",
+            "Name*": "={{ $json.Name }}",
+            "Business Name*": "={{ $json.Business_Name }}",
+            "City*": "={{ $json.City }}",
+            "Phone Number*": "={{ $json.Phone_Number }}"
+          }
+        }
+      },
+      "id": "sheets-append",
+      "name": "Save to Details",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [220, 300],
+      "credentials": {"googleSheetsOAuth2Api": {"id": "LU2FgqzsLQjAYHvC", "name": "Google Sheets account"}}
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "guildId": {"__rl": true, "value": "949898074585706496", "mode": "list"},
+        "sendTo": "user",
+        "userId": {"__rl": true, "value": "={{ $json.bakerId }}", "mode": "id"},
+        "content": "All set! 🎉 Your store profile is saved. You're ready to go — what would you like help with next?"
+      },
+      "id": "discord-confirm",
+      "name": "Send Confirmation",
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [440, 300],
+      "credentials": {"discordBotApi": {"id": "OVthAcSzDTapTKew", "name": "Discord Bot account"}}
+    }
+  ],
+  "connections": {
+    "Setup Store Form": {"main": [[{"node": "Save to Details", "type": "main", "index": 0}]]},
+    "Save to Details": {"main": [[{"node": "Send Confirmation", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "meta": {"templateCredsSetupCompleted": true},
+  "pinData": {}
+}

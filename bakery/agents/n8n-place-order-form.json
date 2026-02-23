@@ -1,0 +1,80 @@
+{
+  "name": "Baker's Club - Place Order Form",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Add new order 🎂",
+        "formDescription": "Fill in the order details. We'll save it and send you a confirmation.",
+        "formPath": "place-order",
+        "formFields": {
+          "values": [
+            {"fieldLabel": "Customer Name", "fieldName": "customer_name", "fieldType": "text", "requiredField": true, "placeholder": "Customer's name"},
+            {"fieldLabel": "Item", "fieldName": "item", "fieldType": "text", "requiredField": true, "placeholder": "e.g. Chocolate cake, Cookies"},
+            {"fieldLabel": "Weight (kg)", "fieldName": "weight", "fieldType": "text", "requiredField": true, "placeholder": "e.g. 1 or 2"},
+            {"fieldLabel": "Price (₹)", "fieldName": "price", "fieldType": "text", "requiredField": true, "placeholder": "e.g. 500"},
+            {"fieldLabel": "Phone Number", "fieldName": "phone_number", "fieldType": "text", "requiredField": true, "placeholder": "Customer's phone"},
+            {"fieldLabel": "Delivery Address", "fieldName": "address", "fieldType": "textarea", "requiredField": true, "placeholder": "Full delivery address"},
+            {"fieldLabel": "Delivery Date", "fieldName": "delivery_date", "fieldType": "date", "requiredField": true},
+            {"fieldLabel": "Delivery Time", "fieldName": "delivery_time", "fieldType": "text", "requiredField": true, "placeholder": "e.g. 10 AM - 12 PM"},
+            {"fieldLabel": "Baker Id", "fieldName": "bakerId", "fieldType": "hiddenField"}
+          ]
+        },
+        "options": {"respondWith": "formSubmitted"}
+      },
+      "id": "form-trigger",
+      "name": "Place Order Form",
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.2,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {"__rl": true, "value": "https://docs.google.com/spreadsheets/d/12ErTLk5wUbn5BlGDy5wYAN9O0mZZOFsh1wSB8iIL_Ho/edit?usp=sharing", "mode": "url"},
+        "sheetName": {"__rl": true, "value": "Orders", "mode": "name"},
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "id": "={{ $json.bakerId }}",
+            "customer_name": "={{ $json.customer_name }}",
+            "item": "={{ $json.item }}",
+            "weight": "={{ $json.weight }}",
+            "price": "={{ $json.price }}",
+            "phone_number": "={{ $json.phone_number }}",
+            "address": "={{ $json.address }}",
+            "delivery_date": "={{ $json.delivery_date }}",
+            "delivery_time": "={{ $json.delivery_time }}"
+          }
+        }
+      },
+      "id": "sheets-append",
+      "name": "Save to Orders",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [220, 300],
+      "credentials": {"googleSheetsOAuth2Api": {"id": "LU2FgqzsLQjAYHvC", "name": "Google Sheets account"}}
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "guildId": {"__rl": true, "value": "949898074585706496", "mode": "list"},
+        "sendTo": "user",
+        "userId": {"__rl": true, "value": "={{ $json.bakerId }}", "mode": "id"},
+        "content": "={{ 'Order saved! 🎉\n\n**Customer:** ' + $json.customer_name + '\n**Item:** ' + $json.item + '\n**Delivery:** ' + $json.delivery_date + ' — ' + $json.delivery_time + '\n\nWhat would you like help with next?' }}"
+      },
+      "id": "discord-confirm",
+      "name": "Send Confirmation",
+      "type": "n8n-nodes-base.discord",
+      "typeVersion": 2,
+      "position": [440, 300],
+      "credentials": {"discordBotApi": {"id": "OVthAcSzDTapTKew", "name": "Discord Bot account"}}
+    }
+  ],
+  "connections": {
+    "Place Order Form": {"main": [[{"node": "Save to Orders", "type": "main", "index": 0}]]},
+    "Save to Orders": {"main": [[{"node": "Send Confirmation", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "meta": {"templateCredsSetupCompleted": true},
+  "pinData": {}
+}
