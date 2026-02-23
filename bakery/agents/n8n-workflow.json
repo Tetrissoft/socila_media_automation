@@ -680,7 +680,7 @@
             {
               "id": "output",
               "name": "output",
-              "value": "={{ 'Here\\'s the form to add your order:\\n\\n' + 'https://n8n.tetrissoft.com/form/place-order?bakerId=' + $('When Executed by Another Workflow').item.json.author_Id + '\\n\\nFill in the details and submit — we\\'ll save it and send you a confirmation! 🎂' }}",
+              "value": "={{ 'Here\\'s the form to add your order:\\n\\n' + 'https://n8n.tetrissoft.com/form/3ef13394-52fa-46fa-b5ce-22eff98abbad?bakerId=' + $('When Executed by Another Workflow').item.json.author_Id + '\\n\\nFill in the details and submit — we\\'ll save it and send you a confirmation! 🎂' }}",
               "type": "string"
             }
           ]
