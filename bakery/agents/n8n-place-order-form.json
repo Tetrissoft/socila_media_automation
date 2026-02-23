@@ -60,7 +60,7 @@
         "guildId": {"__rl": true, "value": "949898074585706496", "mode": "list"},
         "sendTo": "user",
         "userId": {"__rl": true, "value": "={{ $json.bakerId }}", "mode": "id"},
-        "content": "={{ 'Order saved! 🎉\n\n**Customer:** ' + $json.customer_name + '\n**Item:** ' + $json.item + '\n**Delivery:** ' + $json.delivery_date + ' — ' + $json.delivery_time + '\n\nWhat would you like help with next?' }}"
+        "content": "={{ `Order saved! 🎉\\n\\n**Customer:** ${$json.customer_name}\\n**Item:** ${$json.item}\\n**Delivery:** ${$json.delivery_date} — ${$json.delivery_time}\\n\\nWhat would you like help with next?` }}"
       },
       "id": "discord-confirm",
       "name": "Send Confirmation",
