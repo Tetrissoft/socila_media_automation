@@ -6,8 +6,8 @@
       },
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "typeVersion": 1.1,
-      "position": [-544, -4336],
-      "id": "726e8a12-d628-4349-bede-9a59ad144d70",
+      "position": [240, -6816],
+      "id": "58835e13-a466-42af-8045-d5156733f83c",
       "name": "When Executed by Another Workflow"
     },
     {
@@ -41,11 +41,11 @@
         },
         "options": {}
       },
-      "id": "25383312-f432-4f7b-bfea-14ddc2397c10",
-      "name": "Get Gate Prompt",
+      "id": "a7e103b0-40f3-4cd8-8f07-fa62178662ef",
+      "name": "Get Gate Prompt1",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
-      "position": [-320, -4336]
+      "position": [160, -6496]
     },
     {
       "parameters": {
@@ -55,11 +55,11 @@
           "systemMessage": "={{ $json.data }}"
         }
       },
-      "id": "e44e36f9-3dd4-4ed7-8818-0b3eb9aa2f6a",
-      "name": "Gate Agent",
+      "id": "78b63545-fce9-4d89-9fc8-a92a596a988e",
+      "name": "Gate Agent1",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
-      "position": [-96, -4336]
+      "position": [384, -6496]
     },
     {
       "parameters": {
@@ -85,11 +85,11 @@
         },
         "options": {}
       },
-      "id": "01435264-afdd-4ac3-a06b-5ab377ea8874",
-      "name": "Get Orders",
+      "id": "8aed2fea-160c-44b7-8ace-d401655f0a71",
+      "name": "Get Orders1",
       "type": "n8n-nodes-base.googleSheetsTool",
       "typeVersion": 4.7,
-      "position": [1856, -3056],
+      "position": [2336, -5216],
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "LU2FgqzsLQjAYHvC",
@@ -101,11 +101,11 @@
       "parameters": {
         "jsCode": "const output = $input.first().json?.output || $input.first().json?.text || $input.first().json?.message || '';\nconst jsonMatch = output.match(/\\{\\s*\"route\"\\s*:\\s*\"([^\"]+)\"\\s*\\}/);\nconst route = jsonMatch ? jsonMatch[1] : 'main';\nreturn { json: { route, output } };"
       },
-      "id": "b10281d3-d92f-49a4-b4ad-b6edb9463e5e",
-      "name": "Parse Gate Route",
+      "id": "8767e569-b0ae-4c37-a0be-5c992c6a07e0",
+      "name": "Parse Gate Route1",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [256, -4336]
+      "position": [736, -6496]
     },
     {
       "parameters": {
@@ -130,21 +130,21 @@
         },
         "options": {}
       },
-      "id": "3b3ca0a7-501c-4e6a-b385-a8856d3147b6",
-      "name": "Route Setup or Main?",
+      "id": "7cce40e9-352d-43f5-a974-3ddfe138bb9b",
+      "name": "Route Setup or Main?1",
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
-      "position": [480, -4336]
+      "position": [960, -6496]
     },
     {
       "parameters": {
         "jsCode": "const msg = $json.chatInput || $('When Executed by Another Workflow').first().json.chatInput || '';\nconst m = msg.toLowerCase();\nlet route = 'general';\nif (/pending order|my order|list order|show order|what order|tell.*order|view order|check order/i.test(m)) route = 'order_view';\nelse if (/create order|add order|save order|new order|place order|want to.*order|delivery.*order|customer.*order/i.test(m)) route = 'order_create';\nelse if (/price|cost|margin|ingredient|recipe cost|bulk price/i.test(m)) route = 'pricing';\nelse if (/instagram|caption|hashtag|whatsapp|content|social media|marketing/i.test(m)) route = 'marketing';\nelse if (/customer|complaint|reply|negotiation|delay|difficult/i.test(m)) route = 'customer';\nelse if (/fssai|expand|corporate|packaging|branding|growth|business/i.test(m)) route = 'business';\nreturn { json: { route } };"
       },
-      "id": "501847ec-fee2-4e61-88a3-d6a94a9baf2e",
-      "name": "Main Router (Intent)",
+      "id": "14e4bf0f-c238-4529-ad4b-85fd25d0b4aa",
+      "name": "Main Router (Intent)1",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [928, -4048]
+      "position": [1408, -6208]
     },
     {
       "parameters": {
@@ -310,11 +310,11 @@
           "fallbackOutput": "extra"
         }
       },
-      "id": "7ca5e898-afd5-4c0f-a155-22c67c75a3b4",
-      "name": "Route to Agent",
+      "id": "ba6493c5-1d8c-4799-a7dd-9fb5b748c083",
+      "name": "Route to Agent1",
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
-      "position": [1152, -4144]
+      "position": [1632, -6304]
     },
     {
       "parameters": {
@@ -332,11 +332,11 @@
         },
         "options": {}
       },
-      "id": "get-order-prompt",
-      "name": "Get Order Prompt",
+      "id": "4852cfa0-1a33-4a14-9fb7-d78bfc64b6e0",
+      "name": "Get Order Prompt1",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
-      "position": [1376, -4528]
+      "position": [1856, -6688]
     },
     {
       "parameters": {
@@ -354,11 +354,11 @@
         },
         "options": {}
       },
-      "id": "33e0e9fd-f84c-4ba6-8944-3b7be3249c52",
-      "name": "Get Pricing Prompt",
+      "id": "c7840892-b78b-4225-a2a6-efd2f80b4536",
+      "name": "Get Pricing Prompt1",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
-      "position": [1376, -4336]
+      "position": [1856, -6496]
     },
     {
       "parameters": {
@@ -376,11 +376,11 @@
         },
         "options": {}
       },
-      "id": "3da14ce0-3732-4784-b47d-d83eeeb6aaad",
-      "name": "Get Marketing Prompt",
+      "id": "aa7827b9-4bc3-42a0-83ef-e09d851e5818",
+      "name": "Get Marketing Prompt1",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
-      "position": [1440, -4112]
+      "position": [1920, -6272]
     },
     {
       "parameters": {
@@ -398,11 +398,11 @@
         },
         "options": {}
       },
-      "id": "1b57da15-d0d9-4fa8-b7ab-1d8c859b2ea2",
-      "name": "Get Customer Prompt",
+      "id": "28a4e2cb-e093-4067-8a3f-790f222a6e9f",
+      "name": "Get Customer Prompt1",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
-      "position": [1376, -3952]
+      "position": [1856, -6112]
     },
     {
       "parameters": {
@@ -420,11 +420,11 @@
         },
         "options": {}
       },
-      "id": "fbe28273-4c33-47e6-8203-5f64299d1ead",
-      "name": "Get Business Prompt",
+      "id": "9afe0569-5e44-4422-b2ce-c87aedb218f5",
+      "name": "Get Business Prompt1",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
-      "position": [1376, -3760]
+      "position": [1856, -5920]
     },
     {
       "parameters": {
@@ -442,11 +442,11 @@
         },
         "options": {}
       },
-      "id": "883c1cb3-d7e0-4804-83cc-330ed8a83c47",
-      "name": "Get General Prompt",
+      "id": "441750b2-c1ec-4c46-ba16-5bb473addeef",
+      "name": "Get General Prompt1",
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.3,
-      "position": [1376, -3568]
+      "position": [1856, -5728]
     },
     {
       "parameters": {
@@ -456,11 +456,11 @@
           "systemMessage": "={{ $json.data }}"
         }
       },
-      "id": "0074e5a6-7f48-4983-a617-1ed73c0e8840",
-      "name": "Order Agent",
+      "id": "ec288363-412d-481d-9732-cdb59b44312c",
+      "name": "Order Agent1",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
-      "position": [1792, -3280]
+      "position": [2272, -5440]
     },
     {
       "parameters": {
@@ -470,11 +470,11 @@
           "systemMessage": "={{ $json.data }}"
         }
       },
-      "id": "5405464a-102f-4c22-a911-48b0e00cb518",
-      "name": "Pricing Agent",
+      "id": "710b3ae3-d62c-4de5-a29d-e59441ce7f84",
+      "name": "Pricing Agent1",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
-      "position": [1792, -4336]
+      "position": [2272, -6496]
     },
     {
       "parameters": {
@@ -484,11 +484,11 @@
           "systemMessage": "={{ $json.data }}"
         }
       },
-      "id": "e3943877-f4b0-49c2-be70-7ceb92dd356a",
-      "name": "Marketing Agent",
+      "id": "f3860717-76c8-4331-ae2f-504da3311f03",
+      "name": "Marketing Agent1",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
-      "position": [1792, -4144]
+      "position": [2272, -6304]
     },
     {
       "parameters": {
@@ -498,11 +498,11 @@
           "systemMessage": "={{ $json.data }}"
         }
       },
-      "id": "50fc7d42-9167-41d4-b1f6-d8268cba1a6b",
-      "name": "Customer Agent",
+      "id": "4d18fd9d-809b-4bdb-ad19-39935e2a0df3",
+      "name": "Customer Agent1",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
-      "position": [1792, -3952]
+      "position": [2272, -6112]
     },
     {
       "parameters": {
@@ -512,11 +512,11 @@
           "systemMessage": "={{ $json.data }}"
         }
       },
-      "id": "cf36bd34-92d0-4cd8-a7c1-a72ca799b62b",
-      "name": "Business Agent",
+      "id": "675a3160-f130-4dec-a8a3-38c28b07324a",
+      "name": "Business Agent1",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
-      "position": [1792, -3760]
+      "position": [2272, -5920]
     },
     {
       "parameters": {
@@ -526,11 +526,11 @@
           "systemMessage": "={{ $json.data }}"
         }
       },
-      "id": "8692f48e-4012-48cd-86f5-cbcf37fb38b2",
-      "name": "General Agent",
+      "id": "fdf9c530-d2a8-4db4-a324-e825aea84e65",
+      "name": "General Agent1",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
-      "position": [1792, -3568]
+      "position": [2272, -5728]
     },
     {
       "parameters": {
@@ -558,33 +558,33 @@
         },
         "options": {}
       },
-      "id": "972d8635-a280-4b5c-9841-aae84bf0065a",
-      "name": "Pass Context to Main",
+      "id": "23b35b75-eb73-4151-925b-a24816a6b6b3",
+      "name": "Pass Context to Main1",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
-      "position": [704, -4048]
+      "position": [1184, -6208]
     },
     {
       "parameters": {
         "sessionIdType": "customKey",
         "sessionKey": "={{ $('When Executed by Another Workflow').item.json.author_Id }}",
-        "contextWindowLength": 2
+        "contextWindowLength": 10
       },
-      "id": "1434479e-9dad-4406-b8a1-16b0abbce541",
-      "name": "Simple Memory1",
+      "id": "141e930f-b25f-4ab1-a5fc-c5d08c792750",
+      "name": "Simple Memory",
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
-      "position": [1728, -3056]
+      "position": [2208, -5216]
     },
     {
       "parameters": {
         "options": {}
       },
-      "id": "996e06c8-9da0-451d-afe9-5d8d1bf27c65",
-      "name": "Google Gemini Chat Model1",
+      "id": "1e3dbfd2-0164-46dc-92aa-fff39f8c947b",
+      "name": "Google Gemini Chat Model",
       "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
       "typeVersion": 1,
-      "position": [1600, -3056],
+      "position": [2080, -5216],
       "credentials": {
         "googlePalmApi": {
           "id": "Wdjpka3bF2gOBIR7",
@@ -616,11 +616,11 @@
         },
         "options": {}
       },
-      "id": "4612af4f-6597-4929-b98c-53158a5bef61",
-      "name": "GET1",
+      "id": "a43ddc02-8fef-4f8b-a331-e44a63a22b70",
+      "name": "GET",
       "type": "n8n-nodes-base.googleSheetsTool",
       "typeVersion": 4.7,
-      "position": [1984, -3056],
+      "position": [2464, -5216],
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "LU2FgqzsLQjAYHvC",
@@ -661,37 +661,17 @@
           "cellFormat": "RAW"
         }
       },
-      "id": "6d136cd8-8d5e-4707-a267-2918b47d4df9",
-      "name": "Add New Order1",
+      "id": "5afb2cff-4f96-47b5-98d1-812fad7263e6",
+      "name": "Add New Order",
       "type": "n8n-nodes-base.googleSheetsTool",
       "typeVersion": 4.7,
-      "position": [2112, -3056],
+      "position": [2592, -5216],
       "credentials": {
         "googleSheetsOAuth2Api": {
           "id": "LU2FgqzsLQjAYHvC",
           "name": "Google Sheets account"
         }
       }
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "output",
-              "name": "output",
-              "value": "={{ 'Here\\'s the form to set up your store:\\n\\n' + 'https://n8n.tetrissoft.com/form/6dc46bd6-453b-4d4b-963d-1842304e6f6f?bakerId=' + $('When Executed by Another Workflow').item.json.author_Id + '\\n\\nFill it and submit — we\\'ll save your details right away! 🎂' }}",
-              "type": "string"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "9de1d457-bd58-4e6e-ac3b-4900492f594e",
-      "name": "Setup Form Link1",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [1856, -4720]
     },
     {
       "parameters": {
@@ -707,11 +687,11 @@
         },
         "options": {}
       },
-      "id": "b83af487-1215-4bee-a02d-6e2445f6b9a4",
-      "name": "Order Form Link1",
+      "id": "6b72190a-cea9-4ccd-af44-a2737f43a5bc",
+      "name": "Order Form Link",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
-      "position": [1856, -4528]
+      "position": [2336, -6688]
     },
     {
       "parameters": {
@@ -731,11 +711,11 @@
         "content": "={{ $json.output }}",
         "options": {}
       },
-      "id": "cd265a08-f860-4964-949a-a4beaf559978",
-      "name": "Send a message1",
+      "id": "c1d38c59-d3e7-466b-934a-66042c66236d",
+      "name": "Send a message",
       "type": "n8n-nodes-base.discord",
       "typeVersion": 2,
-      "position": [2320, -4032],
+      "position": [2800, -6192],
       "webhookId": "fccfb025-1ff2-4c86-ad5b-32ad09d574a6",
       "credentials": {
         "discordBotApi": {
@@ -750,407 +730,390 @@
       "main": [
         [
           {
-            "node": "Get Gate Prompt",
+            "node": "Get Gate Prompt1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Get Gate Prompt": {
+    "Get Gate Prompt1": {
       "main": [
         [
           {
-            "node": "Gate Agent",
+            "node": "Gate Agent1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Gate Agent": {
+    "Gate Agent1": {
       "main": [
         [
           {
-            "node": "Parse Gate Route",
+            "node": "Parse Gate Route1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Get Orders": {
+    "Get Orders1": {
       "ai_tool": [
         [
           {
-            "node": "Order Agent",
+            "node": "Order Agent1",
             "type": "ai_tool",
             "index": 0
           }
         ]
       ]
     },
-    "Parse Gate Route": {
+    "Parse Gate Route1": {
       "main": [
         [
           {
-            "node": "Route Setup or Main?",
+            "node": "Route Setup or Main?1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Route Setup or Main?": {
+    "Route Setup or Main?1": {
+      "main": [
+        [],
+        [
+          {
+            "node": "Pass Context to Main1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Main Router (Intent)1": {
       "main": [
         [
           {
-            "node": "Setup Form Link1",
+            "node": "Route to Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route to Agent1": {
+      "main": [
+        [
+          {
+            "node": "Order Form Link",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "Pass Context to Main",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Main Router (Intent)": {
-      "main": [
-        [
-          {
-            "node": "Route to Agent",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Route to Agent": {
-      "main": [
-        [
-          {
-            "node": "Order Form Link1",
+            "node": "Get Order Prompt1",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "Get Order Prompt",
+            "node": "Get Pricing Prompt1",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "Get Pricing Prompt",
+            "node": "Get Marketing Prompt1",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "Get Marketing Prompt",
+            "node": "Get Customer Prompt1",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "Get Customer Prompt",
+            "node": "Get Business Prompt1",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "Get Business Prompt",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "Get General Prompt",
+            "node": "Get General Prompt1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Get Pricing Prompt": {
+    "Get Order Prompt1": {
       "main": [
         [
           {
-            "node": "Pricing Agent",
+            "node": "Order Agent1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Get Marketing Prompt": {
+    "Get Pricing Prompt1": {
       "main": [
         [
           {
-            "node": "Marketing Agent",
+            "node": "Pricing Agent1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Get Customer Prompt": {
+    "Get Marketing Prompt1": {
       "main": [
         [
           {
-            "node": "Customer Agent",
+            "node": "Marketing Agent1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Get Business Prompt": {
+    "Get Customer Prompt1": {
       "main": [
         [
           {
-            "node": "Business Agent",
+            "node": "Customer Agent1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Get General Prompt": {
+    "Get Business Prompt1": {
       "main": [
         [
           {
-            "node": "General Agent",
+            "node": "Business Agent1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Order Agent": {
+    "Get General Prompt1": {
       "main": [
         [
           {
-            "node": "Send a message1",
+            "node": "General Agent1",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Pricing Agent": {
+    "Order Agent1": {
       "main": [
         [
           {
-            "node": "Send a message1",
+            "node": "Send a message",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Marketing Agent": {
+    "Pricing Agent1": {
       "main": [
         [
           {
-            "node": "Send a message1",
+            "node": "Send a message",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Customer Agent": {
+    "Marketing Agent1": {
       "main": [
         [
           {
-            "node": "Send a message1",
+            "node": "Send a message",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Business Agent": {
+    "Customer Agent1": {
       "main": [
         [
           {
-            "node": "Send a message1",
+            "node": "Send a message",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "General Agent": {
+    "Business Agent1": {
       "main": [
         [
           {
-            "node": "Send a message1",
+            "node": "Send a message",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Pass Context to Main": {
+    "General Agent1": {
       "main": [
         [
           {
-            "node": "Main Router (Intent)",
+            "node": "Send a message",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Simple Memory1": {
+    "Pass Context to Main1": {
+      "main": [
+        [
+          {
+            "node": "Main Router (Intent)1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
       "ai_memory": [
         [
           {
-            "node": "Gate Agent",
+            "node": "Gate Agent1",
             "type": "ai_memory",
             "index": 0
           },
           {
-            "node": "Order Agent",
+            "node": "Order Agent1",
             "type": "ai_memory",
             "index": 0
           },
           {
-            "node": "Pricing Agent",
+            "node": "Pricing Agent1",
             "type": "ai_memory",
             "index": 0
           },
           {
-            "node": "Marketing Agent",
+            "node": "Marketing Agent1",
             "type": "ai_memory",
             "index": 0
           },
           {
-            "node": "Customer Agent",
+            "node": "Customer Agent1",
             "type": "ai_memory",
             "index": 0
           },
           {
-            "node": "Business Agent",
+            "node": "Business Agent1",
             "type": "ai_memory",
             "index": 0
           },
           {
-            "node": "General Agent",
+            "node": "General Agent1",
             "type": "ai_memory",
             "index": 0
           }
         ]
       ]
     },
-    "Google Gemini Chat Model1": {
+    "Google Gemini Chat Model": {
       "ai_languageModel": [
         [
           {
-            "node": "Gate Agent",
+            "node": "Gate Agent1",
             "type": "ai_languageModel",
             "index": 0
           },
           {
-            "node": "Order Agent",
+            "node": "Order Agent1",
             "type": "ai_languageModel",
             "index": 0
           },
           {
-            "node": "Pricing Agent",
+            "node": "Pricing Agent1",
             "type": "ai_languageModel",
             "index": 0
           },
           {
-            "node": "Marketing Agent",
+            "node": "Marketing Agent1",
             "type": "ai_languageModel",
             "index": 0
           },
           {
-            "node": "Customer Agent",
+            "node": "Customer Agent1",
             "type": "ai_languageModel",
             "index": 0
           },
           {
-            "node": "Business Agent",
+            "node": "Business Agent1",
             "type": "ai_languageModel",
             "index": 0
           },
           {
-            "node": "General Agent",
+            "node": "General Agent1",
             "type": "ai_languageModel",
             "index": 0
           }
         ]
       ]
     },
-    "GET1": {
+    "GET": {
       "ai_tool": [
         [
           {
-            "node": "Gate Agent",
+            "node": "Gate Agent1",
             "type": "ai_tool",
             "index": 0
           },
           {
-            "node": "Order Agent",
+            "node": "Order Agent1",
             "type": "ai_tool",
             "index": 0
           }
         ]
       ]
     },
-    "Add New Order1": {
+    "Add New Order": {
       "ai_tool": [
         [
           {
-            "node": "Order Agent",
+            "node": "Order Agent1",
             "type": "ai_tool",
             "index": 0
           }
         ]
       ]
     },
-    "Setup Form Link1": {
+    "Order Form Link": {
       "main": [
         [
           {
-            "node": "Send a message1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Order Form Link1": {
-      "main": [
-        [
-          {
-            "node": "Send a message1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Get Order Prompt": {
-      "main": [
-        [
-          {
-            "node": "Order Agent",
+            "node": "Send a message",
             "type": "main",
             "index": 0
           }
@@ -1158,16 +1121,7 @@
       ]
     }
   },
-  "pinData": {
-    "When Executed by Another Workflow": [
-      {
-        "chatInput": "Hello",
-        "channel": "1475367906740273453",
-        "author_Id": "941061248391462942",
-        "name": "DM"
-      }
-    ]
-  },
+  "pinData": {},
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "25cf0e9e63e0e61a662eff9163d5d6c39148e8885c4bf4c40be25105a6e56db5"
