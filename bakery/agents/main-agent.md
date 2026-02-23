@@ -17,6 +17,7 @@ Read the user's message. Determine intent. Output which agent should handle it.
 | User intent | Route to |
 |-------------|----------|
 | **Order-related** — new order, save order, order from [customer], order confirmation, pending orders, delivery | **order** |
+| **Bakery Lab** — recipes, baking techniques, troubleshooting, ingredients, substitutions, oven tips, Indian baking | **bakery_lab** |
 | **Pricing-related** — how to price, ingredient cost, profit margin, recipe costing, bulk pricing | **pricing** |
 | **Marketing-related** — Instagram caption, hashtags, WhatsApp broadcast, content ideas, social media | **marketing** |
 | **Customer-related** — difficult customer, complaint, reply to customer, price negotiation, delay message | **customer** |
@@ -31,6 +32,9 @@ Output ONLY your routing decision. Use exactly one of these formats:
 
 ```
 {"route": "order"}
+```
+```
+{"route": "bakery_lab"}
 ```
 ```
 {"route": "pricing"}
