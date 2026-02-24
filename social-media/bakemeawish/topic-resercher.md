@@ -155,18 +155,25 @@ Use these categories to inspire bakery-relevant villains:
 4. **Word Count:** Exactly **2 to 4 words**.
 5. **Strict Constraint:** Do not repeat anything from the History Log.
 6. **Consider Timing:** If seasonal context is provided, lean toward relevant celebration villains.
-7. **Rotate Engagement Types:** Vary between comparison, educational, controversial, and emotional hooks.
+7. **Rotate Engagement Types:** Vary between comparison, educational, controversial, and emotional hooks. **Do NOT default to comparison** - if Content History Log shows recent comparison-heavy topics (e.g., "Plastic Frosting", "Factory Line", "Cardboard Cake"), prefer educational, emotional, or story-worthy topics instead.
 8. **Theme Focus:** If a `Theme` is provided, the topic MUST be directly relevant to that theme. The villain or hook should emerge from within that theme's context.
-9. **Bakery Domain Only:** Never output topics that belong to health, nutrition, diet, or wellness. The villain must be about cake quality, celebration experience, gifting, OR baking education - never about eating habits or nutrition.
+9. **Balance "Other vs Us":** Avoid overusing generic-vs-premium comparison topics. Mix in topics that celebrate OUR craft (ingredient stories, behind-the-scenes, celebration moments) without always positioning "others" as the villain.
+10. **Bakery Domain Only:** Never output topics that belong to health, nutrition, diet, or wellness. The villain must be about cake quality, celebration experience, gifting, OR baking education - never about eating habits or nutrition.
 
 ---
 
 ### **Examples of Valid Topics:**
 
-**Comparison/Share-Worthy:**
+**Comparison/Share-Worthy** (use sparingly, rotate with others):
 - "Hidden Hunger"
 - "Plastic Frosting"
 - "Factory Line"
+
+**"Us"-Focused** (celebrate our craft, no "other vs us"):
+- "Real Vanilla Story"
+- "Hand-Piped Love"
+- "Celebration Moment"
+- "First Slice Joy"
 
 **Educational/Save-Worthy:**
 - "Energy Vampire"

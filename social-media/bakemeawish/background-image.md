@@ -58,8 +58,8 @@ Generate a high-quality, authentic background image that:
   - Dessert table setup with bokeh background
 
 ### Lighting & Texture
-- **Lighting**: Natural daylight, soft golden hour glow, or warm kitchen lighting
-- **Contrast**: Medium to high contrast for visual punch
+- **Lighting**: Natural daylight, soft golden hour glow, or warm kitchen lighting. **Prefer bright, warm light** - avoid dark or moody lighting.
+- **Contrast**: Medium contrast for visual punch - avoid overly dark shadows that make the image feel heavy
 - **Textures**: Highly visible - frosting peaks, crumb structure, ingredient granules
 - **Depth**: Shallow depth of field acceptable for artistic blur
 
@@ -70,10 +70,15 @@ Generate a high-quality, authentic background image that:
 - **Premium**: High-end, sophisticated, never cheap
 
 ### Color Palette
-- **Soft Pastels**: Blush pinks, cream, mint, lavender
+- **Soft Pastels**: Blush pinks, cream, mint, lavender (PREFERRED for most content)
 - **Golden Hues**: Warm golds, caramel tones, honey
 - **Appetizing Colors**: Rich chocolates, berry reds, citrus oranges
-- **Elegant Accents**: White space, metallic touches, dark moody backgrounds for contrast
+- **Elegant Accents**: White space, metallic touches
+
+**CRITICAL - Avoid Dark Backgrounds:**
+- **Default to light, warm, bright** backgrounds. The brand is warm, joyful, celebratory - dark/moody does not align.
+- For **comparison content** (generic vs. premium, villain vs. hero): Use **light backgrounds** - cream, soft pastels, warm golden tones, natural daylight. Never use dark or moody backgrounds for comparison posts.
+- Reserve dark backgrounds only for very specific luxury product shots (e.g., black fondant cake) - and even then, ensure the cake/subject is well-lit and prominent.
 
 ## Critical Constraints
 
@@ -97,8 +102,8 @@ Generate a high-quality, authentic background image that:
 Based on topic, you might generate:
 
 **General:**
-- **"Hidden Hunger"** → Close-up of a partially sliced cake revealing decadent layers, shot from above with dramatic side lighting
-- **"Energy Vampire"** → Dark moody shot of rich chocolate ganache dripping over a cake with steam rising, selective focus
+- **"Hidden Hunger"** → Close-up of a partially sliced cake revealing decadent layers, shot from above with warm natural lighting, cream/soft background
+- **"Energy Vampire"** → Rich chocolate ganache dripping over a cake, warm kitchen lighting, light/cream background (avoid dark moody - keep it warm and appetizing)
 - **"Silent Killer"** → Overhead flatlay of excessive amounts of refined sugar vs. alternative sweeteners used in gourmet baking
 - **"Celebration Sabotage"** → A beautifully decorated cake with one slice removed, showing the moment of anticipation before indulgence
 

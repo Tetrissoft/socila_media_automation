@@ -27,23 +27,27 @@ You will receive:
 
 #### Color Palettes (Select based on content mood)
 
-**Classic Rustic** (Warm, approachable, artisanal):
+**Classic Rustic** (Warm, approachable, artisanal) - PREFERRED for comparison content:
 - Background: `#f4e4d4` (Cream)
 - Text: `#5d4037` (Brown)
 - Accent: `#8d6e63` (Taupe)
-- Use for: Ingredients, recipes, artisan stories
+- Use for: Ingredients, recipes, artisan stories, **comparison/VS content**
 
 **Modern Pop** (Bold, energetic, fun):
 - Background: `#ffe082` (Yellow)
 - Text: `#212121` (Dark Gray)
 - Accent: `#ff5252` (Red)
-- Use for: Sales, promotions, fun facts, engagement
+- Use for: Sales, promotions, fun facts, engagement, **comparison content when energetic**
 
-**Elegant Luxury** (Premium, sophisticated, celebratory):
+**Elegant Luxury** (Premium, sophisticated, celebratory) - USE SPARINGLY:
 - Background: `#212121` (Black)
 - Text: `#fafafa` (White)
 - Accent: `#d4af37` (Gold)
-- Use for: Premium products, gifting, celebrations, weddings
+- Use for: Premium products, gifting, celebrations, weddings - **NOT for comparison content**
+
+**CRITICAL - Comparison/VS Content:**
+- For comparison (generic vs. premium, villain vs. hero): **Always use Classic Rustic or Modern Pop** - light, warm backgrounds.
+- **Never use Elegant Luxury (dark background)** for comparison content - it makes the post feel heavy and reduces scroll-stopping power.
 
 #### Layout Constraints - Smart Adaptive Design
 - Canvas: **1080px × 1920px** (Instagram Story format - works for both Stories and Feed)
@@ -73,6 +77,7 @@ You will receive:
 - **One clear focal message** - avoid visual clutter. Less is more.
 
 - Use the provided `IMAGE` as the background (adjust overlay/opacity as needed for text readability)
+- **If the background image is dark**: Add a light semi-transparent overlay (e.g., rgba(255,255,255,0.3) or cream tint) over the Safe Zone to lighten the text area and improve readability. Prefer lightening dark images over using dark text on dark backgrounds.
 
 ## Your Task
 
@@ -82,14 +87,14 @@ You will receive:
    - Key message hierarchy
 
 2. **Select appropriate design approach**:
-   - **Comparison/VS**: Split layouts (vertical, diagonal, or overlapping cards)
+   - **Comparison/VS**: Split layouts (vertical, diagonal, or overlapping cards). **Use Classic Rustic or Modern Pop palette ONLY** - light backgrounds for contrast and readability.
    - **Lists/Tips**: Bullet points, numbered steps, or grid layouts
    - **Quotes/Testimonials**: Bold typography, centered, minimal design
    - **Product Showcase**: Hero image with overlay, badge/circle frame, or spotlight
    - **Announcements**: Ticket stub, breaking news banner, event card
    - **Engagement**: Poll questions, this-or-that, trivia cards
 
-3. **Choose the right color palette** based on content mood and message
+3. **Choose the right color palette** based on content mood and message. For comparison content: Classic Rustic or Modern Pop (light). Avoid Elegant Luxury (dark) for comparisons.
 
 4. **Generate complete HTML** with:
    - Embedded CSS (no external stylesheets)
