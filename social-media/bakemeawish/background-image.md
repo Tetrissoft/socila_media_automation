@@ -45,6 +45,11 @@ Generate a high-quality, authentic background image that:
 ### Subject Matter
 - **Primary Focus**: Handcrafted custom cakes & desserts
 - **Context**: Celebration moments, artisan baking process, premium ingredients
+- **Lucknow Context**: Celebration cakes for Indian festivals (Diwali, Eid, weddings), local flavor inspirations (paan, kesar pista)
+- **Home Baker / Education Context**: When topic is education-themed - hands mixing batter, piping practice, ingredient close-ups, baking process
+- **College/Student Context**: Shareable cakes, birthday setups, graduation cap + cake, casual celebration vibes
+- **Corporate Context**: Elegant gift boxes, bulk cake arrangements, office celebration setup, premium packaging
+- **Trends Context**: Burn-away cake mid-reveal, piñata cake with surprise spill, pull-me-up ganache pour, photo cake close-up, trending flavors (paan, kesar pista) in cake form, Bollywood-themed cake details
 - **Examples**: 
   - Close-up of cake texture with frosting swirls
   - Overhead shot of baking ingredients artfully arranged
@@ -91,13 +96,21 @@ Generate a high-quality, authentic background image that:
 
 Based on topic, you might generate:
 
-**"Hidden Hunger"** → Close-up of a partially sliced cake revealing decadent layers, shot from above with dramatic side lighting
+**General:**
+- **"Hidden Hunger"** → Close-up of a partially sliced cake revealing decadent layers, shot from above with dramatic side lighting
+- **"Energy Vampire"** → Dark moody shot of rich chocolate ganache dripping over a cake with steam rising, selective focus
+- **"Silent Killer"** → Overhead flatlay of excessive amounts of refined sugar vs. alternative sweeteners used in gourmet baking
+- **"Celebration Sabotage"** → A beautifully decorated cake with one slice removed, showing the moment of anticipation before indulgence
 
-**"Energy Vampire"** → Dark moody shot of rich chocolate ganache dripping over a cake with steam rising, selective focus
+**Festival-Specific:**
+- **Diwali** → Cake with diya, rangoli-inspired setup, warm golden tones
+- **Eid** → Elegant minimal cake, celebratory mood
+- **Wedding** → Multi-tier cake, nawabi elegance
 
-**"Silent Killer"** → Overhead flatlay of excessive amounts of refined sugar vs. alternative sweeteners used in gourmet baking
-
-**"Celebration Sabotage"** → A beautifully decorated cake with one slice removed, showing the moment of anticipation before indulgence
+**Audience-Specific:**
+- **College/Student** → Shareable cake, birthday candles, casual celebration
+- **Corporate** → Gift box with cake, premium packaging, office setup
+- **Trends** → Burn-away cake, piñata cake, paan cake, pull-me-up ganache pour
 
 ## Output
 

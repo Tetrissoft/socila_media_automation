@@ -63,9 +63,14 @@ flowchart TD
 ```json
 {
   "headline": "Punchy 5-7 word title",
-  "content": "Supporting content (body text, bullets separated by |, or comparison text)"
+  "content": "Supporting content (body text, bullets separated by |, or comparison text)",
+  "caption": "Full Instagram caption (2-4 sentences) with emotional hook and CTA",
+  "engagement_prompt": "Tag a friend who... / Comment below: ...",
+  "hashtags": ["#bakemeawish", "#lucknowcakes", "..."]
 }
 ```
+
+**Note**: Caption, hashtags, and engagement_prompt are for the Instagram post caption - not rendered in the HTML poster. The HTML Generator receives only `headline` and `content` for the visual.
 
 **File**: [`content-stratigist.md`](file:///Users/abhinavagarwal/Documents/Developer/prompts-CLassified/social-media/bakemeawish/content-stratigist.md)
 
@@ -173,17 +178,20 @@ The workflow is typically implemented in n8n with the following node structure:
 ```
 Topic Researcher Output → Content Creator Input
                        ↓
-Content Creator Output → Content Editor Input
+Content Creator Output (headline, content, caption, engagement_prompt, hashtags) → Content Editor Input
                        ↓
 Content Editor Output → {Approve/Reject Decision}
                        ↓
          Approved → Background Image Generator Input (receives original Topic)
                        ↓
          Image URL → HTML Generator Input (IMAGE)
-         Content JSON → HTML Generator Input (TEXT)
+         headline + content → HTML Generator Input (TEXT) [for visual poster]
+         caption + engagement_prompt + hashtags → Instagram Post Caption [for publishing]
                        ↓
                   HTML Output → Poster
 ```
+
+The full Content JSON includes the complete Instagram post package: visual content (headline, content) for the HTML poster, plus caption, engagement_prompt, and hashtags for the Instagram post caption when publishing.
 
 ## File Structure
 
@@ -209,3 +217,10 @@ social-media/bakemeawish/
   - Refactored `content-director.md` to audit content quality only
   - HTML Generator now makes all visual/layout decisions
   - Simplified data flow with cleaner separation of concerns
+- **v3.0** (2026-02-24): Lucknow localization, multi-segment audience, bakery/recipe trends, caption/hashtag extension, topic-brand alignment
+  - Lucknow-based brand context, India/Lucknow festival calendar
+  - Multi-segment audience: cake buyers, home bakers, college students, corporate
+  - Bakery trends: viral formats (burn-away, piñata), trending flavors (paan, kesar pista)
+  - Extended Content Strategist output: caption, engagement_prompt, hashtags
+  - Content Director: Topic-Brand Alignment (reject health/nutrition topics)
+  - HTML Generator: Text simplification rules (max 2 layers, no repetition)

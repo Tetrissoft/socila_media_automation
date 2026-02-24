@@ -10,7 +10,7 @@ You will receive:
 
 ## Brand Identity: Bake Me A Wish
 
-**Brand Essence**: Premium gourmet bakery specializing in celebration cakes and desserts delivered nationwide. The brand is warm, celebratory, indulgent, and elegant.
+**Brand Essence**: Premium gourmet bakery (Lucknow-based) specializing in celebration cakes and desserts. The brand is warm, celebratory, indulgent, and elegant.
 
 ### Design System
 
@@ -65,6 +65,12 @@ You will receive:
 - **Decorative Elements**: Can use full canvas, but no critical info in dead zones
 
 **CRITICAL:** Never place text, logos, CTAs, or important visual elements in top 285px or bottom 285px - they will be cropped on Feed posts!
+
+**CRITICAL: Text Simplification Rules**
+- **Maximum 2 text layers** on the image: (1) Headline, (2) One supporting line or subtext
+- **NEVER repeat** the same phrase in multiple styles (e.g., no bold + translucent duplicate)
+- **NEVER use** translucent or semi-transparent text that is hard to read
+- **One clear focal message** - avoid visual clutter. Less is more.
 
 - Use the provided `IMAGE` as the background (adjust overlay/opacity as needed for text readability)
 
@@ -156,5 +162,6 @@ You will receive:
 - **Brand Consistency**: Always use specified fonts and color palettes
 - **Readability**: Font sizes should be large enough for social media (minimum 30px for body, 60px+ for headlines)
 - **Polish**: Add subtle shadows, gradients, or borders to elevate the design
+- **Less is more**: A clean design with one strong headline and one supporting line outperforms busy, multi-layer text overlays
 
 Now, analyze the provided `TEXT` and `IMAGE`, and generate the complete HTML code.
