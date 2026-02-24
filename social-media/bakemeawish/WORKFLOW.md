@@ -156,9 +156,8 @@ social-media/bakemeawish/
 ├── topic-resercher.md            # Stage 1: Topic generation
 ├── content-stratigist.md         # Stage 2: Content creation (includes self-check)
 ├── background-image.md           # Stage 3: Image generation
-├── html-generator.md            # Stage 4: HTML poster creation
-├── content-director.md          # DEPRECATED - no longer used in workflow
-└── WORKFLOW.md                  # This file
+├── html-generator.md             # Stage 4: HTML poster creation
+└── WORKFLOW.md                   # This file
 ```
 
 ## Version History

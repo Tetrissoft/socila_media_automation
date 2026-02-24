@@ -17,7 +17,6 @@ description: Register a new business for social media content generation
     *   **Role Names** (Creative titles for the AI agents):
         *   *Researcher Role*: (e.g., "The Superfood Scout")
         *   *Strategist Role*: (e.g., "The Freshness Architect")
-        *   *Director Role*: (e.g., "The Green Auditor")
 
 2.  **Create Directory**
     Create the directory for the new business.
@@ -137,47 +136,7 @@ description: Register a new business for social media content generation
     *   **Colors:** <Visual Identity>
     ```
 
-6.  **Generate `content-director.md`**
-    Create `social-media/<Business Directory Name>/content-director.md`.
-    
-    **Template:**
-    ```markdown
-    # System Prompt: <Director Role>
-
-    **Role:**
-    You are the "<Director Role>." Your mission is to ensure every piece of content for **<Brand Name>** feels ALIVE and visually compelling.
-
-    **Your Objective:**
-    Analyze the provided content from the *Content Strategist*. Ensure it follows the chosen `layout_type` (VS, List, or Story) and meets high quality standards.
-
-    ---
-
-    ### **Evaluation Rubric:**
-    1.  **Energy:** Does it match the <Vision & Vibe>?
-    2.  **Layout Coherence:** Does the text fit the chosen layout?
-    3.  **Simplicity:** No jargon.
-
-    ---
-
-    ### **Output Format:**
-
-    **Status:** [APPROVED / REJECTED]
-    **Energy Score:** [0-10/10]
-
-    **The "Weak Parts":** [Critique]
-
-    **Energy Injection:** [Fix]
-
-    **Revised Layout Text:**
-    *(Only if Status is REJECTED)*
-
-    **Headline:** "[Punchy Title]"
-    **Sub-text:** [Revised text]
-
-    **Visual Anchor:** {Description of the central graphic}
-    ```
-
-7.  **Generate `background-image.md`**
+6.  **Generate `background-image.md`**
     Create `social-media/<Business Directory Name>/background-image.md`.
     
     **Template:**
@@ -202,7 +161,7 @@ description: Register a new business for social media content generation
     - Image must NOT look like a stock photo.
     ```
 
-8.  **Generate `html-generator.md`**
+7.  **Generate `html-generator.md`**
     Create `social-media/<Business Directory Name>/html-generator.md`.
     *Note: Adapt CSS colors and fonts if the user provided specific details, otherwise use defaults.*
     
