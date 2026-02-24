@@ -4,24 +4,20 @@ This document describes the complete automated pipeline for generating social me
 
 ## Overview
 
-The workflow consists of 5 sequential AI agents, each with a specific role in the content creation process. The output is a ready-to-post HTML-based social media graphic.
+The workflow consists of 4 sequential AI agents. Content Director has been removed - Content Strategist includes self-check validation. Output is a ready-to-post HTML-based social media graphic.
 
 ```mermaid
 flowchart TD
     A[Topic Researcher] --> B[Content Strategist]
-    B --> C[Content Director]
-    C --> D{Approved?}
-    D -->|Yes| E[Background Image Generator]
-    D -->|No| B
-    E --> F[HTML Generator]
-    F --> G[Final Poster]
+    B --> C[Background Image Generator]
+    C --> D[HTML Generator]
+    D --> E[Final Poster]
     
     style A fill:#ffe082
     style B fill:#ffe082
-    style C fill:#ff5252
-    style E fill:#8d6e63
-    style F fill:#8d6e63
-    style G fill:#d4af37
+    style C fill:#8d6e63
+    style D fill:#8d6e63
+    style E fill:#d4af37
 ```
 
 ## Workflow Stages
@@ -31,8 +27,9 @@ flowchart TD
 **Purpose**: Generate viral-worthy content hooks
 
 **Input**:
-- Domain: Gourmet Bakery
+- Domain: Gourmet Bakery (Lucknow)
 - Content History Log (to avoid repetition)
+- Theme (optional)
 
 **Process**:
 - Identifies "Hidden Villains" (problems/myths in generic baking)
@@ -40,30 +37,29 @@ flowchart TD
 - Creates 2-4 word viral hooks using sensory vocabulary
 
 **Output**: 
-- A single topic phrase (e.g., "Hidden Hunger", "Energy Vampire", "Silent Killer")
+- A single topic phrase (e.g., "Hidden Hunger", "Plastic Frosting", "Real Vanilla Story")
 
-**File**: [`topic-resercher.md`](file:///Users/abhinavagarwal/Documents/Developer/prompts-CLassified/social-media/bakemeawish/topic-resercher.md)
+**File**: [`topic-resercher.md`](topic-resercher.md)
 
 ---
 
-### 2. Content Creator ("The Content Creator")
+### 2. Content Strategist ("The Content Creator")
 
-**Purpose**: Create compelling social media copy
+**Purpose**: Create compelling social media copy (with built-in self-check - no Content Director)
 
 **Input**:
 - Topic from Topic Researcher
 
 **Process**:
 - Interprets the topic in the context of gourmet bakery/celebrations
-- Positions the problem ("villain") and solution ("hero")
-- Creates engaging copy aligned with Bake Me A Wish brand voice
-- Structures content appropriately (comparison, list, quote, etc.)
+- Creates engaging copy in Quote, List, or Announcement format (NOT comparison)
+- Self-checks: no comparison format, no health topics, all 5 fields present
 
 **Output** (JSON):
 ```json
 {
   "headline": "Punchy 5-7 word title",
-  "content": "Supporting content (body text, bullets separated by |, or comparison text)",
+  "content": "Supporting content (quote, list, or announcement - NOT comparison)",
   "caption": "Full Instagram caption (2-4 sentences) with emotional hook and CTA",
   "engagement_prompt": "Tag a friend who... / Comment below: ...",
   "hashtags": ["#bakemeawish", "#lucknowcakes", "..."]
@@ -72,34 +68,11 @@ flowchart TD
 
 **Note**: Caption, hashtags, and engagement_prompt are for the Instagram post caption - not rendered in the HTML poster. The HTML Generator receives only `headline` and `content` for the visual.
 
-**File**: [`content-stratigist.md`](file:///Users/abhinavagarwal/Documents/Developer/prompts-CLassified/social-media/bakemeawish/content-stratigist.md)
+**File**: [`content-stratigist.md`](content-stratigist.md)
 
 ---
 
-### 3. Content Editor ("The Content Editor")
-
-**Purpose**: Quality assurance for copy
-
-**Input**:
-- Content JSON from Content Creator
-
-**Process**:
-- Evaluates **Brand Voice**: Does it sound like Bake Me A Wish?
-- Checks **Clarity**: Is the message clear and compelling?
-- Assesses **Engagement Potential**: Will this stop scrollers?
-- Reviews **Social Media Fitness**: Optimized for platform?
-- Validates **Brand Positioning**: Differentiates from generic bakeries?
-
-**Output**:
-- **Status**: APPROVED or REJECTED
-- **Critique**: One sentence explanation
-- **Revised Content**: (only if rejected) - improved version
-
-**File**: [`content-director.md`](file:///Users/abhinavagarwal/Documents/Developer/prompts-CLassified/social-media/bakemeawish/content-director.md)
-
----
-
-### 4. Background Image Generator
+### 3. Background Image Generator
 
 **Purpose**: Create authentic, premium background images
 
@@ -110,48 +83,38 @@ flowchart TD
 - Interprets the topic within gourmet bakery context
 - Generates UGC-style (User Generated Content) photography
 - Creates text-overlay friendly compositions
+- Prefers light, warm backgrounds (avoids dark for comparison content)
 
 **Specifications**:
 - **Aspect Ratio**: 9:16 (vertical/portrait)
 - **Style**: Authentic, natural lighting, high texture
 - **Vibe**: Warm, artisanal, joyful, premium
-- **Colors**: Soft pastels, golden hues, appetizing tones
-
-**Constraints**:
-- NO text in image
-- NOT stock photography aesthetic
-- Must support text overlay
 
 **Output**: 
 - High-quality image URL/file
 
-**File**: [`background-image.md`](file:///Users/abhinavagarwal/Documents/Developer/prompts-CLassified/social-media/bakemeawish/background-image.md)
+**File**: [`background-image.md`](background-image.md)
 
 ---
 
-### 5. HTML Generator
+### 4. HTML Generator
 
 **Purpose**: Create final social media poster
 
 **Input**:
 - **IMAGE**: Background image URL from Background Image Generator
-- **TEXT**: Content from Content Creator (approved by Content Editor)
+- **TEXT**: Content (headline + content) from Content Strategist
 
 **Process**:
 - Analyzes TEXT to determine optimal layout approach
-- Selects appropriate color palette (Classic Rustic/Modern Pop/Elegant Luxury)
+- Selects appropriate color palette (Classic Rustic/Modern Pop preferred for light backgrounds)
 - Generates complete HTML with embedded CSS
 - Uses background image with proper overlays for text readability
-
-**Specifications**:
-- **Canvas**: 1080px × 1350px (Instagram portrait)
-- **Typography**: Playfair Display, Outfit, Abril Fatface, Permanent Marker
-- **Branding**: "BAKE ME A WISH" footer at bottom center
 
 **Output**: 
 - Complete HTML file ready for poster conversion
 
-**File**: [`html-generator.md`](file:///Users/abhinavagarwal/Documents/Developer/prompts-CLassified/social-media/bakemeawish/html-generator.md)
+**File**: [`html-generator.md`](html-generator.md)
 
 ---
 
@@ -159,68 +122,48 @@ flowchart TD
 
 ### n8n Flow Configuration
 
-The workflow is typically implemented in n8n with the following node structure:
+The workflow is implemented in n8n with the following node structure (Content Director removed):
 
 1. **Trigger**: Manual or scheduled
 2. **AI Agent Node 1**: Topic Researcher
-3. **AI Agent Node 2**: Content Creator (receives topic)
-4. **AI Agent Node 3**: Content Editor (receives content JSON)
-5. **If Node**: Check if APPROVED
-   - Yes → Continue to node 6
-   - No → Loop back to node 2 with revisions
-6. **AI Image Generation Node**: Background Image (receives topic)
-7. **AI Agent Node 4**: HTML Generator (receives image URL + content)
-8. **HTML to Image Converter**: Final poster generation
-9. **Storage/Publishing**: Save to cloud/post to social media
+3. **AI Agent Node 2**: Content Strategist (receives topic)
+4. **AI Image Generation Node**: Background Image (receives topic)
+5. **AI Agent Node 3**: HTML Generator (receives image URL + headline + content)
+6. **HTML to Image Converter**: Final poster generation
+7. **Storage/Publishing**: Save to cloud/post to social media (use caption, engagement_prompt, hashtags for Instagram)
 
 ### Data Flow
 
 ```
-Topic Researcher Output → Content Creator Input
+Topic Researcher Output → Content Strategist Input
                        ↓
-Content Creator Output (headline, content, caption, engagement_prompt, hashtags) → Content Editor Input
+Content Strategist Output (headline, content, caption, engagement_prompt, hashtags)
                        ↓
-Content Editor Output → {Approve/Reject Decision}
-                       ↓
-         Approved → Background Image Generator Input (receives original Topic)
-                       ↓
-         Image URL → HTML Generator Input (IMAGE)
+         Topic → Background Image Generator Input
          headline + content → HTML Generator Input (TEXT) [for visual poster]
          caption + engagement_prompt + hashtags → Instagram Post Caption [for publishing]
                        ↓
+         Image URL → HTML Generator Input (IMAGE)
+                       ↓
                   HTML Output → Poster
 ```
-
-The full Content JSON includes the complete Instagram post package: visual content (headline, content) for the HTML poster, plus caption, engagement_prompt, and hashtags for the Instagram post caption when publishing.
 
 ## File Structure
 
 ```
 social-media/bakemeawish/
 ├── project-overview.md           # Brand overview and objectives
-├── topic-resercher.md           # Stage 1: Topic generation
-├── content-stratigist.md        # Stage 2: Content creation
-├── content-director.md          # Stage 3: QA/Audit
-├── background-image.md          # Stage 4: Image generation
-├── html-generator.md            # Stage 5: HTML poster creation
+├── topic-resercher.md            # Stage 1: Topic generation
+├── content-stratigist.md         # Stage 2: Content creation (includes self-check)
+├── background-image.md           # Stage 3: Image generation
+├── html-generator.md            # Stage 4: HTML poster creation
+├── content-director.md          # DEPRECATED - no longer used in workflow
 └── WORKFLOW.md                  # This file
 ```
 
 ## Version History
 
 - **v1.0** (2026-02-17): Initial documentation of workflow
-  - Updated `html-generator.md` to dynamic LLM prompt
-  - Enhanced `background-image.md` with detailed guidelines
-  - Documented complete pipeline
 - **v2.0** (2026-02-17): Content/Presentation separation
-  - Refactored `content-stratigist.md` to focus purely on copywriting
-  - Refactored `content-director.md` to audit content quality only
-  - HTML Generator now makes all visual/layout decisions
-  - Simplified data flow with cleaner separation of concerns
-- **v3.0** (2026-02-24): Lucknow localization, multi-segment audience, bakery/recipe trends, caption/hashtag extension, topic-brand alignment
-  - Lucknow-based brand context, India/Lucknow festival calendar
-  - Multi-segment audience: cake buyers, home bakers, college students, corporate
-  - Bakery trends: viral formats (burn-away, piñata), trending flavors (paan, kesar pista)
-  - Extended Content Strategist output: caption, engagement_prompt, hashtags
-  - Content Director: Topic-Brand Alignment (reject health/nutrition topics)
-  - HTML Generator: Text simplification rules (max 2 layers, no repetition)
+- **v3.0** (2026-02-24): Lucknow localization, multi-segment audience, caption/hashtag extension
+- **v4.0** (2026-02-24): Removed Content Director - Content Strategist now includes self-check validation. Simplified to 4-stage workflow.
