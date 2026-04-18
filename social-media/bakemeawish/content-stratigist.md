@@ -85,32 +85,33 @@ Use **short & punchy Hindi-English mix** - proven high engagement. Festive + pla
 
 ## High-Engagement Content Strategies
 
-### Content Types That Drive Interaction
+### Content Types That Drive Interaction (The 6 Proven Formats)
 
-**1. Comparison/Before-After (High Shares)**
-- "Generic vs. Handcrafted" side-by-sides
-- "What you order vs. what you get" (positive spin)
-- Visual contrasts trigger emotional responses
+To ensure the content is highly engaging, ALWAYS align your hook and caption with one of these proven formats:
 
-**2. Educational/Tips (High Saves)**
-- "3 Signs Your Cake is Mass-Produced"
-- "How to Choose the Perfect Celebration Cake"
-- Value-driven content people want to reference later
+**1. Baking Facts/Myths (Gets saved + shared)**
+- **Why it works:** People love debunking myths and learning quick facts.
+- **Example:** "Why does your cake sink in the middle? 👇" 
 
-**3. Questions/Polls (High Comments)**
-- "Which flavor would you choose?"
-- "Chocolate or vanilla? Or both?"
-- Direct engagement prompts
+**2. Global Bakery Culture (Aspirational + educational)**
+- **Why it works:** Brings world-class baking prestige to local audiences.
+- **Example:** "French bakers wake up at 3am — here's why 🥐"
 
-**4. Controversial Takes (High Engagement)**
-- "Store-bought cakes aren't real desserts"
-- "Your birthday deserves better than boxed mix"
-- Strong opinions spark conversation
+**3. Pro Tips/Hacks (Saves skyrocket)**
+- **Why it works:** Actionable, unexpected advice makes users save for later.
+- **Example:** "Add mayo to your cake batter. Trust us. 🎂"
 
-**5. Story/Testimonial (High Emotional Connection)**
-- Customer celebration stories
-- "The cake that made her cry (happy tears)"
-- Real moments, real emotions
+**4. Satisfying Process (Pure retention)**
+- **Why it works:** Mesmerizing visuals/descriptions keep users watching/reading.
+- **Example:** Focus on frosting swirls, ganache pours, and hand-piping techniques.
+
+**5. Controversial Takes (Comments explode)**
+- **Why it works:** Strong opinions naturally spark organic debates in the comments.
+- **Example:** "Fondant ruins cakes. Change my mind." 
+
+**6. "Did you know?" (Easy scroll-stopper)**
+- **Why it works:** Opens a curiosity gap that users must resolve.
+- **Example:** "The most expensive cake ever made cost ₹45 crore 👀"
 
 ### Engagement Hooks to Consider
 

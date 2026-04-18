@@ -31,29 +31,34 @@ You will receive:
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Permanent+Marker&family=Abril+Fatface&display=swap" rel="stylesheet">
 ```
 
-#### Color Palettes (Select based on content mood)
+#### Dynamic Color Palettes (Always Rotate & Mix Up)
 
-**Classic Rustic** (Warm, approachable, artisanal) - PREFERRED for comparison content:
-- Background: `#f4e4d4` (Cream)
-- Text: `#5d4037` (Brown)
-- Accent: `#8d6e63` (Taupe)
-- Use for: Ingredients, recipes, artisan stories, **comparison/VS content**
+Do NOT stick to just one or two safe themes. The brand thrives on versatility. Rotate creatively through these vibrant and contrasting palettes based on the context:
 
-**Modern Pop** (Bold, energetic, fun):
-- Background: `#ffe082` (Yellow)
-- Text: `#212121` (Dark Gray)
-- Accent: `#ff5252` (Red)
-- Use for: Sales, promotions, fun facts, engagement, **comparison content when energetic**
+**1. Pastel Dream (Soft, magical, highly shareable):**
+- Backgrounds: Blends of `#FFD1DC` (Soft Pink), `#B3E5BD` (Mint), `#E6E6FA` (Lavender)
+- Text: `#2A2A2A` (Deep Charcoal) or `#FFFFFF` (White with shadow)
+- Vibe: Dreamy, aesthetic, perfect for satisfying process shots or aesthetic cakes.
 
-**Elegant Luxury** (Premium, sophisticated, celebratory) - USE SPARINGLY:
-- Background: `#212121` (Black)
-- Text: `#fafafa` (White)
-- Accent: `#d4af37` (Gold)
-- Use for: Premium products, gifting, celebrations, weddings - **NOT for comparison content**
+**2. Vivid Neon Pop (Bold, scroll-stopping, energetic):**
+- Backgrounds: `#FF2A54` (Vivid Berry), `#00F0B5` (Electric Aqua), or `#FFD000` (Cyber Yellow)
+- Text: High contrast `#111111` or `#FFFFFF`
+- Vibe: Exciting announcements, controversial takes, highly energetic hooks.
 
-**CRITICAL - Comparison/VS Content:**
-- For comparison (generic vs. premium, villain vs. hero): **Always use Classic Rustic or Modern Pop** - light, warm backgrounds.
-- **Never use Elegant Luxury (dark background)** for comparison content - it makes the post feel heavy and reduces scroll-stopping power.
+**3. Elegant High-Contrast (Premium but modern):**
+- Backgrounds: `#0F172A` (Rich Slate) or `#4A0404` (Deep Crimson)
+- Text Editor/Accents: `#FDE047` (Bright Gold) and `#FFFFFF` (Crisp White)
+- Vibe: Luxury but striking, global bakery culture, expensive facts.
+
+**4. Earthy Artisan (Warm & authentic but not boring):**
+- Backgrounds: `#E8A87C` (Warm Peach) or `#41B3A3` (Vibrant Teal)
+- Text: `#3E2723` (Deep Brown) or `#FFFFFF`
+- Vibe: Pro hacks, facts, recipes, natural ingredients.
+
+**CRITICAL: KEEP IT VERSATILE**
+- **Never stick to just one look.** Be unpredictable. Use vibrant colors, smooth gradients, subtle glassmorphism, or bold contrasting solid blocks.
+- **Ensure high contrast** for readability, but make the colors POP.
+- **Banned:** Dull, overly muted, generic, repetitive corporate looks.
 
 #### Layout Constraints - Smart Adaptive Design
 - Canvas: **1080px × 1920px** (Instagram Story format - works for both Stories and Feed)
@@ -94,14 +99,14 @@ You will receive:
    - Key message hierarchy
 
 2. **Select appropriate design approach**:
-   - **Comparison/VS**: Split layouts (vertical, diagonal, or overlapping cards). **Use Classic Rustic or Modern Pop palette ONLY** - light backgrounds for contrast and readability.
+   - **Comparison/VS**: Split layouts (vertical, diagonal, or overlapping cards). **Use high-contrast vibrant palettes** - ensure backgrounds allow text readability.
    - **Lists/Tips**: Bullet points, numbered steps, or grid layouts
    - **Quotes/Testimonials**: Bold typography, centered, minimal design
    - **Product Showcase**: Hero image with overlay, badge/circle frame, or spotlight
    - **Announcements**: Ticket stub, breaking news banner, event card
    - **Engagement**: Poll questions, this-or-that, trivia cards
 
-3. **Choose the right color palette** based on content mood and message. For comparison content: Classic Rustic or Modern Pop (light). Avoid Elegant Luxury (dark) for comparisons.
+3. **Choose the right color palette** based on content mood and message. Rotate through Pastel Dream, Vivid Neon, High-Contrast, or Earthy palettes constantly to keep the feed extremely dynamic and unpredictable. Never stick to just one look.
 
 4. **Generate complete HTML** with:
    - Embedded CSS (no external stylesheets)

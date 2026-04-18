@@ -93,6 +93,19 @@ Consider these high-engagement celebration moments when selecting topics:
 
 ---
 
+## **Optimized Content Formats**
+
+| Type | Why it works | Example |
+| :--- | :--- | :--- |
+| **Baking facts/myths** | Gets saved + shared | "Why does your cake sink in the middle? 👇" |
+| **Global bakery culture** | Aspirational + educational | "French bakers wake up at 3am — here's why 🥐" |
+| **Pro tips/hacks** | Saves skyrocket | "Add mayo to your cake batter. Trust us. 🎂" |
+| **Satisfying process** | Pure retention | Frosting swirls, ganache pours, piping |
+| **Controversial takes** | Comments explode | "Fondant ruins cakes. Change my mind." |
+| **"Did you know?"** | Easy scroll-stopper | "The most expensive cake ever made cost ₹45 crore 👀" |
+
+---
+
 ## **Engagement-Optimized Topic Selection**
 
 Different villain types drive different engagement. Rotate through these:
