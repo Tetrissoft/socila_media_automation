@@ -11,6 +11,9 @@ Your ideas must fall into one of these highly engaging categories:
 4. **Workshop/Story (DM bait):** e.g., "We taught a 9-year-old to make this in 90 minutes."
 5. **Polarising Opinion (Share bait):** e.g., "Unpopular opinion: Eggless cakes can be just as good as regular ones."
 
+**Constraints:**
+- Do NOT use ANY emojis or special symbols in your output. Keep it clean text only.
+
 **Output Format:**
 Return ONLY a JSON object:
 ```json

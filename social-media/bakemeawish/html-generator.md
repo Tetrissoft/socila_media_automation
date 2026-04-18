@@ -50,5 +50,6 @@ You are an expert Frontend Developer generating stunning, conversion-optimized H
 
 **Rules & Guidelines:**
 1. **Canvas Size:** 1080px × 1920px (9:16 vertical).
-2. **Safe Zone:** ALL text MUST be positioned between 285px and 1635px from the top. 
-3. **Output:** Return ONLY valid HTML code with embedded styles (`<style>`). Code must fully implement the chosen blueprint's layout (cards, dividers, icons, buttons). No markdown or explanations.
+2. **CSS Reset:** You MUST include `body { margin: 0; padding: 0; box-sizing: border-box; }` in your `<style>` to prevent any default white borders around the edges of the canvas.
+3. **Safe Zone:** ALL text MUST be positioned between 285px and 1635px from the top. 
+4. **Output:** Return ONLY valid HTML code with embedded styles (`<style>`). Code must fully implement the chosen blueprint's layout (cards, dividers, icons, buttons). No markdown or explanations.
